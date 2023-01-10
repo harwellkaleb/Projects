@@ -9,7 +9,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 220; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color:1230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -265,6 +265,32 @@ img {
   grid-template-columns: .5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
+
+}
+
+.home_social{
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.home_social-icon{
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.home_social-icon:hover{
+  color:var(--first-color-alt);
+}
+
+
+.home_blob{
+  width: 200px;
+  fill: var(--first-color);
+}
+
+.home_blob-img{
+  width: 170px;
 }
 
 /*==================== BUTTONS ====================*/
