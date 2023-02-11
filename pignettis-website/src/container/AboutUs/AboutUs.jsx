@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { images } from '../../constants';
-import SpecialMenu from '../Menu/SpecialMenu';
 import './AboutUs.css';
 
 const AboutUs = () => (
