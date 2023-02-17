@@ -2,6 +2,13 @@ body{
     background-color: #87d0d3;
 }
 
+.custom__button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
 .container{
     border: 1px solid black;
     width: 95%;
