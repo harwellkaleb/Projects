@@ -20,11 +20,13 @@ const Navbar = () => {
       <li className='p__opensans'><a href='#Private-Events'>Private Events</a></li>
       <li className='p__opensans'><a href='#contact'>Contact</a></li>
     </ul>
+    
     <div className="app__navbar-login">
       <a href='https://www.toasttab.com/pignettis-italian-temple' target='_blank' className='p__opensans'>Order Online</a>
       <div />
       <a href='/' className='p__opensans'>Book table</a>
     </div>
+
     <div className='app__navbar-smallscreen'>
       <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => setToggleMenu(true)} />
 
@@ -37,6 +39,8 @@ const Navbar = () => {
           <li className='p__opensans'><a href='#menu'onClick={() => setToggleMenu(false)}>Menu</a></li>
           <li className='p__opensans'><a href='#Private-Events'onClick={() => setToggleMenu(false)}>Private Events</a></li>
           <li className='p__opensans'><a href='#contact'onClick={() => setToggleMenu(false)}>Contact</a></li>
+          <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple' onClick={() => setToggleMenu(false)} target='_blank'>Order Online</a></li>
+          <li className='p__opensans'><a href='/' onClick={() => setToggleMenu(false)}>Book table</a></li>
         </ul>
       </div>
       )}

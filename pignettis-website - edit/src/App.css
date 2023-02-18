@@ -8,9 +8,6 @@
   align-items: center;
 }
 
-.g__letter{
-  translate: -3rem;
-}
 
 .app__bg {
   background: url('./assets/bg.png');
