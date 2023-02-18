@@ -1,0 +1,51 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+  display: flex;
+}
+
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav_menu {
+  position: fixed;
+  width: 100%;
+  background-color: var(--body-color);
+  padding-right: 6rem;
+  padding-top: 1.5rem;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+  border-radius: 1.5rem 1.5rem 0 0;
+  transition: .3s;
+
+}
+
+.header-title {}
+
+
+
+.nav_list {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
