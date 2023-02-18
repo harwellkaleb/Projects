@@ -39,8 +39,9 @@ flex-direction: column;
 }
 
 .app__specialMenu-menu_img img{
-width: 100%;
+width:400px;
 height: auto;
+translate: -40px;
 }
 
 .app__specialMenu_menu_items {
@@ -53,10 +54,10 @@ height: auto;
 
 @media screen and (max-width:2000px) {
     .app__specialMenu-menu_img{
-      width:650px;
+      width:400px;
     }
     .app__specialMenu-menu_img img{
-        height:920px;
+        height:100%;
     }
 }
 
@@ -78,8 +79,11 @@ height: auto;
 @media screen and (max-width:650px) {
     .app__specialMenu-menu_img{
         width: 100%;
+        
     }
+
     .app__specialMenu-menu_heading{
+        margin-top: 8rem;
         font-size: 35px;
         line-height: 48.5px;
 

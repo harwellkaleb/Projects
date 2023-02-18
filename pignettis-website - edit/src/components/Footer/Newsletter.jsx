@@ -8,11 +8,10 @@ const Newsletter = () => (
     <div className="app__newsletter-heading">
       <SubHeading title='Newsletter' />
       <h1 className="headtext__cormorant">Subscribe to our news letter</h1>
-      <p className="p__opensans">And never miss latest updates!</p>
+      <p className="p__opensans">Click below to sign up and never miss the latest updates!</p>
     </div>
     <div className='app__newsletter-input flex__center'>
-      <input type='email' placeholder='Enter your email address'  />
-      <button className='custom__button'>Subscribe</button>
+      <button className='custom__button'><a href='https://lp.constantcontactpages.com/su/n39UDM5' target='_blank'>Subscribe</a></button>
     </div>
   </div>
 );
