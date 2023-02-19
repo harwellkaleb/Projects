@@ -7,7 +7,9 @@
   justify-content: center;
   align-items: center;
 }
-
+body{
+  overflow-x: hidden;
+}
 
 .app__bg {
   background: url('./assets/bg.png');
@@ -174,5 +176,18 @@
   .headtext__cormorant {
     font-size: 45px;
     line-height: 70px;
+  }
+}
+@media screen and (max-width:300px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  
+  .p__cormorant {
+    font-size: 21px;
+  }
+
+  .p__opensans {
+    font-size: 14px;
   }
 }

@@ -10,10 +10,21 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     line-height: 100px;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .app__header-img{
     width: 80%;
     
+}
+
+@media screen and (max-width:650px) {
+    .app__header-h1{
+        font-family: var(--font-base);
+        color: #804040;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        line-height: 100px;
+        font-size: 30px;
+    }
 }
