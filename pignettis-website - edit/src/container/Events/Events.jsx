@@ -8,7 +8,7 @@ const Events = () => {
       title: 'Valentine\'s Day Dinner',
       date: 'February 14, 2023',
       time: '6:00 PM - 9:00 PM',
-      image: images.valentines,
+      image: images.gallery03,
       description: 'Join us for a romantic Valentine\'s Day dinner with your special someone. We\'ll be serving up a delicious prix fixe menu featuring some of our most popular dishes. Reservations are required and can be made by calling us at (123) 456-7890.',
       link: '#'
     },
@@ -16,7 +16,7 @@ const Events = () => {
       title: 'Wine Tasting Event',
       date: 'March 15, 2023',
       time: '7:00 PM - 9:00 PM',
-      image: images.wineTasting,
+      image: images.gallery01,
       description: 'Come join us for a fun and informative evening of wine tasting. We\'ll be sampling a variety of wines from all over the world and our sommelier will be on hand to answer any questions you may have. Tickets are $50 per person and can be purchased at the restaurant or by calling us at (123) 456-7890.',
       link: '#'
     },
@@ -24,18 +24,18 @@ const Events = () => {
       title: 'Live Music Fridays',
       date: 'Every Friday Night',
       time: '7:00 PM - 10:00 PM',
-      image: images.liveMusic,
+      image: images.gallery02,
       description: 'Join us for an evening of live music and great food every Friday night. Our talented musicians will be playing a variety of genres, from jazz and blues to rock and roll. Reservations are recommended, but walk-ins are always welcome.',
       link: '#'
     }
   ];
 
   return (
-    <div className='app__events' id='events'>
-      <h2 className='app__section-title'>Upcoming Events</h2>
-      <div className='app__events-list'>
+    <div className='app__events app__bg  section__padding' id='events'>
+      <h2 className='app__section-title headtext__cormorant'>Upcoming Events</h2>
+      <div className='app__events-container '>
         {events.map((event, index) => (
-          <div className='app__event' key={index}>
+          <div className='app__event' key={index} style={{ marginBottom: '1rem' }}>
             <div className='app__event-image' style={{ backgroundImage: `url(${event.image})` }}>
               <div className='app__event-title'>{event.title}</div>
             </div>
