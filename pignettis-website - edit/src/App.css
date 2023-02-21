@@ -7,9 +7,7 @@
   justify-content: center;
   align-items: center;
 }
-body{
-  overflow-x: hidden;
-}
+
 
 .app__bg {
   background: url('./assets/bg.png');

@@ -42,7 +42,7 @@ const Events = () => {
             <div className='app__event-details'>
               <div className='app__event-date'>{event.date} at {event.time}</div>
               <div className='app__event-description'>{event.description}</div>
-              <a href={event.link} className='app__event-link'>Learn More</a>
+              {/* <a href={event.link} className='app__event-link'>Learn More</a> */}
             </div>
           </div>
         ))}
