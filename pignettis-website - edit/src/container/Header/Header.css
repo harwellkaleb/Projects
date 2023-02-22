@@ -28,3 +28,14 @@
         font-size: 30px;
     }
 }
+
+@media screen and (max-width:300px) {
+    .app__header-h1{
+        font-family: var(--font-base);
+        color: #804040;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        line-height: 70px;
+        font-size: 30px;
+    }
+}

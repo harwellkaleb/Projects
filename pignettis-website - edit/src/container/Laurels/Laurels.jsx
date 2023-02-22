@@ -24,12 +24,12 @@ const Laurels = () => (
 
       <div className="app__laurels_awards">
         <div style={{ padding: '20px', }}>
-          <p className='p__cormorant'>To request booking for a private event:</p>
+          <p className='p__cormorant'>To request booking for a private event,</p>
         </div>
         <div className='email_link' style={{ padding: '20px' }}>
           <p className='p__cormorant'>Please email us details about your event at
-            <a  className='email_link' href="mailto:roberthernandez@pignettis.com" > roberthernandez@pignettis.com </a>
-            <br/>We will reply to your email as soon as possible! Thank you!
+            <a  className='email_link' href="mailto:roberthernandez@pignettis.com" >  roberthernandez@pignettis.com  </a>
+            please include,  <br/> First name: <br/> last name:<br/> dates: <br/> time: <br/> # of guests:<br/> phone number:<br/>   we will reply to your email as soon as possible! Thank you!
           </p>
         </div>
       </div>
