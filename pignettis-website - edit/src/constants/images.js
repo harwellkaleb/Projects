@@ -24,6 +24,7 @@ import logo512 from '../assets/logo512.png';
 import dinner1 from '../assets/dinnermenu1.png';
 import dinner2 from '../assets/dinnermenu2.png';
 import lunch from '../assets/lunch.png';
+import brunch from '../assets/brunch.png';
 
 export default {
   bg,
@@ -51,5 +52,6 @@ export default {
   logo512,
   dinner1,
   dinner2,
-  lunch
+  lunch,
+  brunch
 };
