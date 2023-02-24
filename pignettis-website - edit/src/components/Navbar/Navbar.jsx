@@ -46,7 +46,10 @@ const Navbar = () => {
         <li className='p__opensans'><a href='#about'>About</a></li>
         <li className='p__opensans'><a href='#menu'>Menu</a></li>
         <li className='p__opensans'><a href='#Private-Events'>Private Events</a></li>
+        <li className='p__opensans'><a href='#events'>Upcoming Events</a></li>
         <li className='p__opensans'><a href='#contact'>Contact</a></li>
+        <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple/giftcards' target='_blank' rel='norefferer'>Gift Cards</a></li>
+        <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple/findcard' target='_blank' rel='norefferer'>Gift Card Balance</a></li>
       </ul>
 
       <div className="app__navbar-login">
@@ -57,7 +60,7 @@ const Navbar = () => {
       
 
       <div className='app__navbar-smallscreen'>
-        <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu color='black' fontSize={27} onClick={() => setToggleMenu(true)} />
 
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
@@ -66,10 +69,13 @@ const Navbar = () => {
               <li className='p__opensans'><a href='#home' onClick={() => setToggleMenu(false)}>Home</a></li>
               <li className='p__opensans'><a href='#about' onClick={() => setToggleMenu(false)} >About</a></li>
               <li className='p__opensans'><a href='#menu' onClick={() => setToggleMenu(false)}>Menu</a></li>
+              <li className='p__opensans'><a href='#events' onClick={() => setToggleMenu(false)}>Events</a></li>
               <li className='p__opensans'><a href='#Private-Events' onClick={() => setToggleMenu(false)}>Private Events</a></li>
               <li className='p__opensans'><a href='#contact' onClick={() => setToggleMenu(false)}>Contact</a></li>
               <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple' target='_blank' rel='norefferer' onClick={() => setToggleMenu(false)} >Order Online</a></li>
               <li className='p__opensans'><a href='https://www.opentable.com/pignettis-italian-restaurant-reservations-temple?restref=168931&lang=en-US&ot_source=Restaurant%20website' target='_blank' rel="noreferrer" onClick={() => setToggleMenu(false)}>Book table</a></li>
+              <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple/giftcards' target='_blank' rel='norefferer' onClick={() => setToggleMenu(false)} >Gift Cards</a></li>
+              <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple/findcard' target='_blank' rel='norefferer' onClick={() => setToggleMenu(false)} >Gift Card Balance</a></li>
             </ul>
           </div>
         )}

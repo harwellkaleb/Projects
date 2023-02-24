@@ -1,6 +1,6 @@
 .app__specialMenu{
     flex-direction: column;
-    background: var(--color-black);
+    background-image: var(--color-black);
 
 }
 
@@ -24,7 +24,7 @@
     font-size: 45px;
     line-height: 58.5px;
     letter-spacing: 0.04em;
-    color: var(--color-white);
+    color: black;
 }
 
 .app__specialMenu-menu_wine, .app__specialMenu-menu_cocktails{
@@ -40,6 +40,7 @@ flex-direction: column;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .app__specialMenu-menu_img img{
@@ -48,16 +49,20 @@ height: auto;
 display: flex;
 flex-direction: row;
 justify-content: center;
+
 }
 
 .dinner__img:hover {
-    opacity: 0.7;
+     opacity: 0.7; 
+     border: solid;
+    
+    
   }
 
 .app__specialMenu_menu_items {
     display: flex;
     flex-direction: row;
-
+   
     margin: 2rem 0;
     
    
@@ -76,7 +81,7 @@ justify-content: center;
 
 .specialMenu__details{
    font-family: var(--font-alt);
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -150,7 +155,7 @@ justify-content: center;
     .app__specialMenu_menu_items img{
         width: 100px;
         display: flex;
-        height: auto;
+        height: 150px;
     }
     .app__specialMenu-menu_img img{
         width:300px;
@@ -170,7 +175,7 @@ justify-content: center;
         line-height: 3rem;
     }
 }
-@media screen and (max-width:1456px) {
+@media screen and (max-width:1690px) {
     .app__specialMenu-menu{
         flex-direction: column;
         align-items: center;
@@ -204,7 +209,7 @@ justify-content: center;
         .app__specialMenu_menu_items img{
             width: 100px;
             display: flex;
-            height: auto;
+            height: 150px;
         }
         .app__specialMenu-menu_img img{
             width:300px;
@@ -260,7 +265,7 @@ justify-content: center;
         .app__specialMenu_menu_items img{
             width: 100px;
             display: flex;
-            height: auto;
+            height: 150px;
         }
         .app__specialMenu-menu_img img{
             width:300px;
@@ -309,7 +314,7 @@ justify-content: center;
     .app__specialMenu_menu_items img{
         width: 100px;
         display: flex;
-        height: auto;
+        height: 150px;
     }
     .app__specialMenu-menu_img img{
         width:300px;
@@ -406,7 +411,7 @@ justify-content: center;
     .app__specialMenu_menu_items img{
         width: 100px;
         display: flex;
-        height: auto;
+        height: 150px;
     }
     .app__specialMenu-menu_img img{
         width:300px;
@@ -455,7 +460,7 @@ justify-content: center;
     .app__specialMenu_menu_items img{
         width: 100px;
         display: flex;
-        height: auto;
+        height: 150px;
     }
     .app__specialMenu-menu_img img{
         width:300px;
@@ -509,7 +514,7 @@ justify-content: center;
 .app__specialMenu_menu_items img{
     width: 100px;
     display: flex;
-    height: auto;
+    height: 150px;
 }
 .app__specialMenu-menu_img img{
     width:100px;
@@ -566,7 +571,7 @@ justify-content: center;
     .app__specialMenu_menu_items img{
         width: 100px;
         display: flex;
-        height: auto;
+        height: 150px;
     }
     .app__specialMenu-menu_img img{
         width:200px;

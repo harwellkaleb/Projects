@@ -19,7 +19,7 @@ function SpecialMenu() {
   return (
     <div className='app__specialMenu flex__center section__padding' id='menu'>
       <div className='app__specialMenu-title'>
-        <span className='p__cormorant' style={{ fontSize: '50px' }} >explore all of our delicious offerings!</span>
+        <span className='p__cormorant' style={{ fontSize: '50px',color:' #804040' }} >explore all of our delicious offerings!</span>
         <SubHeading title="" />
         {/* <h1 className='headtext__cormorant'>Todays Special</h1> */}
       </div>
@@ -31,7 +31,7 @@ function SpecialMenu() {
           <div className='menu__details specialMenu__details-container'>
             <div className='specialMenu__details-grid'>
               <p className='specialMenu__details'> lunch is served from 11am-4pm, mon-saturday</p>
-              <p className='specialMenu__details'> brunch is served from 11am-2pm, saturday</p>
+              <p className='specialMenu__details'> brunch is served from 11am-3pm, saturday</p>
             </div>
           </div>
           <div className="app__specialMenu-menu_cocktails flex__center">
@@ -50,8 +50,8 @@ function SpecialMenu() {
           <p className="app__specialMenu-menu_heading" style={{ marginBottom: '4rem' }}>Dinner</p>
           <div className='menu__details specialMenu__details-container'>
             <div className='specialMenu__details-grid'>
-              <p className='specialMenu__details'> served from 4pm-9pm, mon-thursday</p>
-              <p className='specialMenu__details'> served from 4pm-10pm, friday-saturday</p>
+              <p className='specialMenu__details'> served All Day, mon-thursday</p>
+              <p className='specialMenu__details'> served All Day, friday-saturday</p>
             </div>
           </div>
           <div className="app__specialMenu_menu_items">
