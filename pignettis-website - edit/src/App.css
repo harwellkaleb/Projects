@@ -8,9 +8,6 @@
   align-items: center;
 }
 
-.g__letter{
-  translate: -3rem;
-}
 
 .app__bg {
   background: url('./assets/bg.png');
@@ -177,5 +174,18 @@
   .headtext__cormorant {
     font-size: 45px;
     line-height: 70px;
+  }
+}
+@media screen and (max-width:300px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  
+  .p__cormorant {
+    font-size: 14px;
+  }
+
+  .p__opensans {
+    font-size: 14px;
   }
 }

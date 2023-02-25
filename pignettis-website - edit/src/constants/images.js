@@ -20,6 +20,17 @@ import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
+import logo512 from '../assets/logo512.png';
+import dinner1 from '../assets/dinnermenu1.png';
+import dinner2 from '../assets/dinnermenu2.png';
+import lunch from '../assets/lunch.png';
+import brunch from '../assets/brunch.png';
+import event1 from '../assets/nyeve23.png';
+import event2 from '../assets/wd10-20.png';
+import event3 from '../assets/straightfromthevine.png';
+import event4 from '../assets/vday.png';
+import event5 from '../assets/wd2-8.png';
+import event6 from '../assets/wd11-17.png';
 
 export default {
   bg,
@@ -44,4 +55,15 @@ export default {
   sign,
   quote,
   gericht,
+  logo512,
+  dinner1,
+  dinner2,
+  lunch,
+  brunch,
+  event1,
+  event2,
+  event3,
+  event4,
+  event5,
+  event6,
 };

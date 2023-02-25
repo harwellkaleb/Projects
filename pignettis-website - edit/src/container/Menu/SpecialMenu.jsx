@@ -1,46 +1,74 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import { SubHeading, MenuItem } from '../../components';
 import { images, data } from '../../constants';
 import './SpecialMenu.css';
 
-const SpecialMenu = () => (
-  <div className='app__specialMenu flex__center section__padding' id='menu'>
-    <div className='app__specialMenu-title'>
-      <SubHeading title="explore all of our delicious offerings!" />
-      {/* <h1 className='headtext__cormorant'>Todays Special</h1> */}
-    </div>
-    <div className="app__specialMenu-menu">
-      <div className="app__specialMenu-menu_wine flex__center">
-        <p className="app__specialMenu-menu_heading">Lunch</p>
-        <div className="app__specialMenu_menu_items">
-          {data.wines.map((wine, index) => (
-            <MenuItem key={wine.title + index} title={wine.title} price={wine.price}  tags={wine.tags} />
-          ))}
+function SpecialMenu() {
+  const [showImage, setShowImage] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+    setShowImage(true);
+  };
+
+  const handleCloseClick = () => {
+    setShowImage(false);
+  };
+
+  return (
+    <div className='app__specialMenu flex__center section__padding' id='menu'>
+      <div className='app__specialMenu-title'>
+        <span className='p__cormorant' style={{ fontSize: '50px',color:' #804040' }} >explore all of our delicious offerings!</span>
+        <SubHeading title="" />
+        {/* <h1 className='headtext__cormorant'>Todays Special</h1> */}
+      </div>
+      <div className="app__specialMenu-menu">
+
+
+        <div className="app__specialMenu-menu_wine flex__center">
+          <p className="app__specialMenu-menu_heading" style={{ marginBottom: '4rem' }}>Brunch & Lunch</p>
+          <div className='menu__details specialMenu__details-container'>
+            <div className='specialMenu__details-grid'>
+              <p className='specialMenu__details'> lunch is served from 11am-4pm, mon-saturday</p>
+              <p className='specialMenu__details'> brunch is served from 11am-3pm, saturday</p>
+            </div>
+          </div>
+          <div className="app__specialMenu-menu_cocktails flex__center">
+            <div className="app__specialMenu_menu_items">
+              <img className='dinner__img' src={images.brunch} alt="menu img" onClick={() => handleImageClick(images.brunch)} />
+              <img className='dinner__img' src={images.lunch} alt="menu img" onClick={() => handleImageClick(images.lunch)} />
+            </div>
+          </div>
+        </div>
+
+        <div className="app__specialMenu-menu_img">
+          <img src={images.gericht} alt="menu img" />
+        </div>
+
+        <div className="app__specialMenu-menu_cocktails flex__center">
+          <p className="app__specialMenu-menu_heading" style={{ marginBottom: '4rem' }}>Dinner</p>
+          <div className='menu__details specialMenu__details-container'>
+            <div className='specialMenu__details-grid'>
+              <p className='specialMenu__details'> served All Day, mon-thursday</p>
+              <p className='specialMenu__details'> served All Day, friday-saturday</p>
+            </div>
+          </div>
+          <div className="app__specialMenu_menu_items">
+            <img className='dinner__img' src={images.dinner1} alt="menu img" onClick={() => handleImageClick(images.dinner1)} />
+            <img className='dinner__img' src={images.dinner2} alt="menu img" onClick={() => handleImageClick(images.dinner2)} />
+          </div>
         </div>
       </div>
 
-      <div className="app__specialMenu-menu_img">
-        <img src={images.menu} alt="menu img" />
-      </div>
-
-
-      <div className="app__specialMenu-menu_cocktails flex__center">
-        <p className="app__specialMenu-menu_heading">Dinner</p>
-        <div className="app__specialMenu_menu_items">
-          {data.cocktails.map((cocktail, index) => (
-           <MenuItem key={cocktail.title + index} title={cocktail.title} price={cocktail.price}  tags={cocktail.tags} />
-
-          ))}
+      {showImage && (
+        <div className="fullscreen-image" onClick={handleCloseClick}>
+          <img src={selectedImage} alt="menu img" />
+          <button type='button' className='custom__button' onClick={handleCloseClick}>Close</button>
         </div>
-      </div>
-
+      )}
     </div>
-      
-      <div style={{marginTop:"15px"}}>
-        <button type='button' className='custom__button'>View More</button>
-      </div>
-  </div>
-);
+  );
+}
 
 export default SpecialMenu;

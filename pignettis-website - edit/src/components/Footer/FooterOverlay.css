@@ -9,11 +9,17 @@
 }
 
 .app__footerOverlay-black{
-    height: 25%;
+    height: 65%;
     background: var(--color-black);
 }
 
 .app__footerOverlay-img{
     height: 75%;
 
+}
+
+@media screen and (max-width:650px) {
+    .app__footerOverlay-black{
+        height: 40%;
+    }
 }

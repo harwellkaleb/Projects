@@ -7,6 +7,17 @@
     margin-top: 3rem;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+
+.form__container label{
+    color: #fff;
+}
+
 .email_link a:hover {
 color:  #0091bb;
 }
@@ -43,4 +54,5 @@ color:  #0091bb;
         min-width: 100%;
         margin: 1rem 0;
     }
+    
 }
