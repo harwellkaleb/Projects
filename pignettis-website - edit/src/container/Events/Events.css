@@ -51,6 +51,8 @@
   .app__event-image {
      width: 240px;
     height: 300px; 
+    transition: ease-out 0.15s;
+    border-radius: 10px;
     /* background-size: cover;
     background-position: center;
     border: 1px solid black;  */

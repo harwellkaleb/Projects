@@ -1,44 +1,56 @@
-import React from 'react';
-
+import React, { useRef } from 'react';
+import emailjs from "emailjs-com"
 import { SubHeading } from '../../components';
 import { images, data } from '../../constants';
 import './Laurels.css';
 
-const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
-  <div className='app__laurels_awards-card'>
-    <img src={imgUrl} alt='award' />
-    <div className='app__laurels_awards-card_content'>
-      <p className='p__cormorant' style={{ color: 'DCCA87' }} >{title}</p>
-      <p className='p__cormorant' style={{ color: 'DCCA87' }} >{subtitle}</p>
-    </div>
-  </div>
-)
+const ContactUs = () => {
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
 
+    emailjs.sendForm('service_3h51822', 'template_kidzl5v', form.current, 'JergqtwcHkG9AMAx_')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      form.current.reset();
+  };
 
-const Laurels = () => (
-  <div className='app__bg app__wrapper section__padding' id='Private-Events'>
-    <div className="app__wrapper_info">
-      {/* <SubHeading title='Book Your Events' /> */}
-      <h1 className='headtext__cormorant'>request a private event</h1>
+  return (
+    <div className='app__bg app__wrapper section__padding' id='Private-Events'>
+      <div className="app__wrapper_info">
+        <h1 className='headtext__cormorant'>request a private event</h1>
+        <p className='p__cormorant'>To request booking for a private event,</p>
+        <p className='p__cormorant'>Please email us details about your event at we will reply to your email as soon as possible! Thank you!</p>
+        <SubHeading title='' />
+        <form className='form__container' ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Phone Number</label>
+          <input type="text" name="user_phone" />
+          <label># of Guests</label>
+          <input type="number" name="user_number" />
+          <label>Time</label>
+          <input type="time" name="user_time" />
+          <label>Date</label>
+          <input type="date" name="user_date" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
+        </form>
+      </div>
 
-      <div className="app__laurels_awards">
-        <div style={{ padding: '20px', }}>
-          <p className='p__cormorant'>To request booking for a private event,</p>
-        </div>
-        <div className='email_link' style={{ padding: '20px' }}>
-          <p className='p__cormorant'>Please email us details about your event at
-            <a  className='email_link' href="mailto:roberthernandez@pignettis.com" >  roberthernandez@pignettis.com  </a>
-            please include,  <br/> First name: <br/> last name:<br/> dates: <br/> time: <br/> # of guests:<br/> phone number:<br/>   we will reply to your email as soon as possible! Thank you!
-          </p>
-        </div>
+      <div className="app__wrapper_img">
+        <img src={images.laurels} alt='laurels' />
       </div>
     </div>
+  );
+};
 
-    <div className="app__wrapper_img">
-      <img src={images.laurels} alt='laurels' />
-    </div>
-  </div>
-);
+export default ContactUs;
 
-export default Laurels;
