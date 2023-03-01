@@ -93,28 +93,43 @@ function SpecialMenu() {
       </div>
 
       {showImage && (
-  <div className="fullscreen-image">
-    <img onClick={handleCloseClick}
-      src={selectedImage} 
-      alt="menu img" 
-      onTouchStart={(event) => setStartX(event.touches[0].clientX)}
-      onTouchMove={(event) => setEndX(event.touches[0].clientX)}
-      onTouchEnd={handleSwipe}
-    />
-    {dinnerImages.includes(selectedImage) && (
-      <div>
-        <button type='button' className='button-prev' onClick={handlePrevClick}><UilArrowLeft/></button>
-        <button type='button' className='button-next' onClick={handleNextClick}><UilArrowRight/></button>
-      </div>
-    )}
-    {lunchBrunchImages.includes(selectedImage) && showLunchBrunchButtons && (
-      <div>
-        <button type='button' className='button-prev' onClick={handlePrevClick}>Prev</button>
-        <button type='button' className='button-next' onClick={handleNextClick}>Next</button>
-      </div>
-    )}
-    <button type='button' className='custom__button' style={{borderRadius:'10px'}} onClick={handleCloseClick}>Close</button>
-  </div>
+   <div className="fullscreen-image">
+   <img  onClick={handleCloseClick}
+     src={selectedImage} 
+     alt="menu img" 
+     onTouchStart={(event) => {
+       if (!lunchBrunchImages.includes(selectedImage)) {
+         setStartX(event.touches[0].clientX);
+       }
+     }}
+     onTouchMove={(event) => {
+       if (!lunchBrunchImages.includes(selectedImage)) {
+         setEndX(event.touches[0].clientX);
+       }
+     }}
+     onTouchEnd={() => {
+       if (!lunchBrunchImages.includes(selectedImage)) {
+         handleSwipe();
+       } else {
+         setStartX(null);
+         setEndX(null);
+       }
+     }}
+   />
+   {dinnerImages.includes(selectedImage) && (
+     <div>
+       <button type='button' className='button-prev' onClick={handlePrevClick}><UilArrowLeft/></button>
+       <button type='button' className='button-next' onClick={handleNextClick}><UilArrowRight/></button>
+     </div>
+   )}
+   {lunchBrunchImages.includes(selectedImage) && showLunchBrunchButtons && (
+     <div>
+       <button type='button' className='button-prev' onClick={handlePrevClick}>Prev</button>
+       <button type='button' className='button-next' onClick={handleNextClick}>Next</button>
+     </div>
+   )}
+   <button type='button' className='custom__button button_close' style={{borderRadius:'10px'}}  onClick={handleCloseClick}>Close</button>
+ </div>
 )}
 
 
