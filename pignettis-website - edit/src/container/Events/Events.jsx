@@ -18,6 +18,10 @@ const Events = () => {
       image: images.winetasting229,
       link: '#'
     },
+    {
+      image: images.bhcalendar,
+      link: '#'
+    },
     
   ];
   const PastEvents = [

@@ -34,6 +34,7 @@ import event6 from '../assets/wd11-17.png';
 import bodegasWd from '../assets/BodegasWd.png'
 import buenavista from '../assets/bv.png'
 import winetasting229 from '../assets/2-29wt.png'
+import bhcalendar from '../assets/bhcalendar.png'
 
 export default {
   bg,
@@ -72,4 +73,5 @@ export default {
   bodegasWd,
   buenavista,
   winetasting229,
+  bhcalendar,
 };

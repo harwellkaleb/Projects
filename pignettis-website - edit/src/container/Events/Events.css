@@ -11,9 +11,11 @@
     /* max-width: 1200px;
     margin: 0 auto; */
     display: flex;
+    flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
-  margin:3rem;
+  margin: 0 -10px;
 
   }
  .upcoming__events{
@@ -49,21 +51,22 @@
   }
   
   .app__event-image {
-     width: 240px;
-    height: 300px; 
-    transition: ease-out 0.15s;
+     width: 240px; 
+     height: 300px;
+     transition: ease-out 0.15s;
     border-radius: 10px;
     /* background-size: cover;
     background-position: center;
     border: 1px solid black;  */
     cursor: pointer;
+    /* width: calc(33.33% - 20px); */
     display: flex;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-    margin: 12px;
+    margin: 0 10px;
   }
  
   .app__section-title{
