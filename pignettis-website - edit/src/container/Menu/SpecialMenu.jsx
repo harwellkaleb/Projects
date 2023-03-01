@@ -1,3 +1,5 @@
+import { UilArrowLeft } from '@iconscout/react-unicons'
+import { UilArrowRight } from '@iconscout/react-unicons'
 import React, { useState } from 'react';
 import { SubHeading, MenuItem } from '../../components';
 import { images, data } from '../../constants';
@@ -6,20 +8,49 @@ import './SpecialMenu.css';
 function SpecialMenu() {
   const [showImage, setShowImage] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
+  const [imageIndex, setImageIndex] = useState(0);
+  const dinnerImages = [images.dinner1, images.dinner2];
+  const lunchBrunchImages = [images.brunch, images.lunch];
+  const [showLunchBrunchButtons, setShowLunchBrunchButtons] = useState(true);
+  const [startX, setStartX] = useState(null);
+  const [endX, setEndX] = useState(null);
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
     setShowImage(true);
+    setShowLunchBrunchButtons(!lunchBrunchImages.includes(image));
+  };
+
+  const handlePrevClick = () => {
+    setImageIndex((imageIndex + dinnerImages.length - 1) % dinnerImages.length);
+    setSelectedImage(dinnerImages[(imageIndex + dinnerImages.length - 1) % dinnerImages.length]);
+  };
+
+  const handleNextClick = () => {
+    setImageIndex((imageIndex + 1) % dinnerImages.length);
+    setSelectedImage(dinnerImages[(imageIndex + 1) % dinnerImages.length]);
   };
 
   const handleCloseClick = () => {
     setShowImage(false);
   };
 
+  const handleSwipe = () => {
+    if (startX && endX && endX < startX) {
+      handleNextClick();
+    } else if (startX && endX && endX > startX) {
+      handlePrevClick();
+    }
+    setStartX(null);
+    setEndX(null);
+  };
+
+
+
   return (
     <div className='app__specialMenu flex__center section__padding' id='menu'>
       <div className='app__specialMenu-title'>
-        <span className='p__cormorant' style={{ fontSize: '50px',color:' #804040' }} >explore all of our delicious offerings!</span>
+        <span className='p__cormorant' style={{ fontSize: '50px', color: ' #804040' }} >explore all of our delicious offerings!</span>
         <SubHeading title="" />
         {/* <h1 className='headtext__cormorant'>Todays Special</h1> */}
       </div>
@@ -56,17 +87,38 @@ function SpecialMenu() {
           </div>
           <div className="app__specialMenu_menu_items">
             <img className='dinner__img' src={images.dinner1} alt="menu img" onClick={() => handleImageClick(images.dinner1)} />
-            <img className='dinner__img' src={images.dinner2} alt="menu img" onClick={() => handleImageClick(images.dinner2)} />
+            {/* <img className='dinner__img' src={images.dinner2} alt="menu img" onClick={() => handleImageClick(images.dinner2)} /> */}
           </div>
         </div>
       </div>
 
       {showImage && (
-        <div className="fullscreen-image" onClick={handleCloseClick}>
-          <img src={selectedImage} alt="menu img" />
-          <button type='button' className='custom__button' onClick={handleCloseClick}>Close</button>
-        </div>
-      )}
+  <div className="fullscreen-image">
+    <img onClick={handleCloseClick}
+      src={selectedImage} 
+      alt="menu img" 
+      onTouchStart={(event) => setStartX(event.touches[0].clientX)}
+      onTouchMove={(event) => setEndX(event.touches[0].clientX)}
+      onTouchEnd={handleSwipe}
+    />
+    {dinnerImages.includes(selectedImage) && (
+      <div>
+        <button type='button' className='button-prev' onClick={handlePrevClick}><UilArrowLeft/></button>
+        <button type='button' className='button-next' onClick={handleNextClick}><UilArrowRight/></button>
+      </div>
+    )}
+    {lunchBrunchImages.includes(selectedImage) && showLunchBrunchButtons && (
+      <div>
+        <button type='button' className='button-prev' onClick={handlePrevClick}>Prev</button>
+        <button type='button' className='button-next' onClick={handleNextClick}>Next</button>
+      </div>
+    )}
+    <button type='button' className='custom__button' style={{borderRadius:'10px'}} onClick={handleCloseClick}>Close</button>
+  </div>
+)}
+
+
+
     </div>
   );
 }

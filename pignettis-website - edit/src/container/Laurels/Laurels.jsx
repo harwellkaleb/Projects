@@ -24,7 +24,7 @@ const ContactUs = () => {
       <div className="app__wrapper_info">
         <h1 className='headtext__cormorant'>request a private event</h1>
         <p className='p__cormorant'>To request booking for a private event,</p>
-        <p className='p__cormorant'>Please email us details about your event at we will reply to your email as soon as possible! Thank you!</p>
+        <p className='p__cormorant'>Please fill out the form below and we will reply to your email as soon as possible! Thank you!</p>
         <SubHeading title='' />
         <form className='form__container' ref={form} onSubmit={sendEmail}>
           <label>Name</label>

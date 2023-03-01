@@ -7,15 +7,15 @@ const Events = () => {
 
   const UpcomingEvents = [
     {
-      image: images.event1,
+      image: images.bodegasWd,
       link: '#'
     },
     {
-      image: images.event2,
+      image: images.buenavista,
       link: '#'
     },
     {
-      image: images.event3,
+      image: images.winetasting229,
       link: '#'
     },
     
@@ -30,7 +30,7 @@ const Events = () => {
       link: '#'
     },
     {
-      image: images.event6,
+      image: images.event1,
       link: '#'
     },
     

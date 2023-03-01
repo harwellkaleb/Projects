@@ -31,6 +31,9 @@ import event3 from '../assets/straightfromthevine.png';
 import event4 from '../assets/vday.png';
 import event5 from '../assets/wd2-8.png';
 import event6 from '../assets/wd11-17.png';
+import bodegasWd from '../assets/BodegasWd.png'
+import buenavista from '../assets/bv.png'
+import winetasting229 from '../assets/2-29wt.png'
 
 export default {
   bg,
@@ -66,4 +69,7 @@ export default {
   event4,
   event5,
   event6,
+  bodegasWd,
+  buenavista,
+  winetasting229,
 };
