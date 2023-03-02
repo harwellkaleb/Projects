@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { UilArrowUp } from '@iconscout/react-unicons';
+ import { UilArrowUp } from '@iconscout/react-unicons';
 import { SubHeading } from '../../components';
 import { meal } from '../../constants';
 import './Header.css';
@@ -41,7 +41,7 @@ const Header = () => {
         <button type='button'  className='custom__button'><a href='#menu'>Explore Menu</a></button>
         {showScrollButton && (
           <button type='button' className='scroll__button' onClick={scrollToTop}>
-            <UilArrowUp  className="myReact-icons" size='30' color="white" />
+            { <UilArrowUp  className="myReact-icons" size='30' color="white" /> }
           </button>
         )}
       </div>
