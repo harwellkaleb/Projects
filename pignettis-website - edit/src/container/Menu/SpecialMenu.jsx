@@ -117,7 +117,7 @@ function SpecialMenu() {
      }}
    />
    {dinnerImages.includes(selectedImage) && (
-     <div>
+     <div className='arrows__container'>
        <button type='button' className='button-prev' onClick={handlePrevClick}><UilArrowLeft/></button>
        <button type='button' className='button-next' onClick={handleNextClick}><UilArrowRight/></button>
      </div>

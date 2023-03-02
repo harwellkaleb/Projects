@@ -54,21 +54,25 @@
 }
 
 .button-prev {
-  position: fixed;
+  position: absolute;
   border-radius: 10px;
   border: none;
-  bottom: 30px;
   background-color: var(--color-crimson);
   transform: translateX(-280%);
 }
 
 .button-next {
-  position: fixed;
+  position: absolute;
   border-radius: 10px;
   border: none;
-  bottom: 30px;
   transform: translateX(180%);
   background-color: var(--color-crimson);
+}
+
+.arrows__container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 
