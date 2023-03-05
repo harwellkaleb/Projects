@@ -31,6 +31,9 @@ import plants from "./farming.svg";
 import tree from "./tree.svg";
 import lawnMower from "./lawn-mower.svg";
 import shrubs from "./plant-shear.svg";
+import gallery01 from "./gallery01.png";
+import gallery02 from "./gallery02.png";
+import gallery03  from "./gallery03.png";
 
 export {
   airbnb,
@@ -66,4 +69,8 @@ export {
   tree,
   lawnMower,
   shrubs,
+  gallery01,
+  gallery02,
+  gallery03,
+
 };
