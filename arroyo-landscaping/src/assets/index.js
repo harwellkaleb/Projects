@@ -25,6 +25,7 @@ import people02 from "./people02.png";
 import people03 from "./people03.png";
 import treegrass from "./treegrass.png";
 import sprout from "./sprout.svg";
+import arrowDown from "./arrow-down.svg";
 
 export {
   airbnb,
@@ -54,4 +55,5 @@ export {
   people03,
   treegrass,
   sprout,
+  arrowDown,
 };

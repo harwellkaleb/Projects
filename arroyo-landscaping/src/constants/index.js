@@ -10,13 +10,14 @@ export const navLinks = [
     title: "Services",
   },
   {
-    id: "product",
-    title: "Product",
-  },
-  {
     id: "clients",
     title: "Clients",
   },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+ 
 ];
 
 export const features = [
@@ -110,31 +111,31 @@ export const stats = [
 ];
 
 export const footerLinks = [
-  {
-    title: "Useful Links",
-    links: [
-      {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
+  // {
+  //   title: "Useful Links",
+  //   links: [
+  //     {
+  //       name: "Content",
+  //       link: "https://www.hoobank.com/content/",
+  //     },
+  //     {
+  //       name: "How it Works",
+  //       link: "https://www.hoobank.com/how-it-works/",
+  //     },
+  //     {
+  //       name: "Create",
+  //       link: "https://www.hoobank.com/create/",
+  //     },
+  //     {
+  //       name: "Explore",
+  //       link: "https://www.hoobank.com/explore/",
+  //     },
+  //     {
+  //       name: "Terms & Services",
+  //       link: "https://www.hoobank.com/terms-and-services/",
+  //     },
+  //   ],
+  // },
   {
     title: "Community",
     links: [
@@ -160,19 +161,19 @@ export const footerLinks = [
       },
     ],
   },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
-      },
-    ],
-  },
+  // {
+  //   title: "Partner",
+  //   links: [
+  //     {
+  //       name: "Our Partner",
+  //       link: "https://www.hoobank.com/our-partner/",
+  //     },
+  //     {
+  //       name: "Become a Partner",
+  //       link: "https://www.hoobank.com/become-a-partner/",
+  //     },
+  //   ],
+  // },
 ];
 
 export const socialMedia = [
