@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       {/* <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" /> */}
-      <h1 className="flex-1 font-poppins font-semibold ss:text-[22px] text-[22px] text-white ss:leading-[100.8px] leading-[30px]">
+      <h1 className="flex-1 font-poppins font-semibold ss:text-[22px] text-[15px] text-white ss:leading-[100.8px] leading-[30px]">
             Arroyo {" "}<span className="text-gradient">Landscaping</span>{" "}
             Service
           </h1>

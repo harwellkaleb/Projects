@@ -28,24 +28,22 @@ const Hero = () => {
           Service.
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Our team of experts uses a methodology to identify the credit cards
-          most likely to fit your needs. We examine annual percentage rates,
-          annual fees.
+        Welcome to Arroyo Landscaping Service, your premier choice for professional landscaping services in the Temple, TX area. We are committed to providing exceptional quality and customer service to meet all of your landscaping needs. Our team of experienced professionals specializes in a wide range of services including lawn care, tree trimming, irrigation, and much more. We pride ourselves on our attention to detail and our ability to turn your vision into reality. Contact us today to schedule a consultation and let us help you create the outdoor oasis of your dreams!
         </p>
       </div>
 
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={treegrass} alt="billing" className="w-[100%] h-[100%] relative z-[5]" 
+      <div className={`flex-1 flex ${styles.flexCenter} md:my-1 my-10 relative`}>
+        <img className="xs:w-[80%] h-[50%] xl:w-[100%] h-[50%]" src={treegrass} alt="treegrass" 
         style={{
-          borderRadius:'10px',
-          paddingRight:'10px',
-          paddingLeft:'10px',
+          paddingRight:'40px',
+          paddingLeft:'40px',
+          borderRadius: '40px !important'
         }} 
         />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
+        <div className="absolute z-[1] w-[80%] h-[80%]  white__gradient bottom-40" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
         {/* gradient end */}
       </div>

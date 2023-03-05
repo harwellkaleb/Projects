@@ -26,6 +26,11 @@ import people03 from "./people03.png";
 import treegrass from "./treegrass.png";
 import sprout from "./sprout.svg";
 import arrowDown from "./arrow-down.svg";
+import barrow from "./barrow-gardening.svg";
+import plants from "./farming.svg";
+import tree from "./tree.svg";
+import lawnMower from "./lawn-mower.svg";
+import shrubs from "./plant-shear.svg";
 
 export {
   airbnb,
@@ -56,4 +61,9 @@ export {
   treegrass,
   sprout,
   arrowDown,
+  barrow,
+  plants,
+  tree,
+  lawnMower,
+  shrubs,
 };

@@ -48,7 +48,7 @@ const ContactForm = () => {
           
         }}
       >
-        <h2 className={`${styles.heading2} mb-2`}>Contact Form</h2>
+        <h2 className={`${styles.heading2}`}>Contact Form</h2>
         <form className={`${styles.flex} md:flex-col justify-center items-center`}ref={form} >
           <div style={{ width: 'calc(50% - 1rem)'}} className="m-5">
             <label
@@ -127,8 +127,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none ${styles.flexCenter}`}
-            style={{ marginTop: "10px" }}
+            className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary mt-10 bg-blue-gradient rounded-[10px] outline-none ${styles.flexCenter}`}
             onClick={handleSubmit}
           >
             Submit
