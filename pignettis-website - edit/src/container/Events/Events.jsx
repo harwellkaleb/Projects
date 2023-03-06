@@ -147,7 +147,7 @@ const Events = () => {
   // };
 
   return (
-    <div className="app__events">
+    <div id='events' style={{paddingBottom:'4em'}} className="app__events">
       <h2 className="app__section-title headtext__cormorant">Upcoming Events</h2>
       <div className="app__events-container">
         {UpcomingEvents.map((event, index) => (
