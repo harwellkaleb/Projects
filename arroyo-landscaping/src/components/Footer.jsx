@@ -3,9 +3,9 @@ import { logo } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
-    <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
-      <div className="flex-[10] flex flex-col justify-start mr-0">
+  <section className={`${styles.flex} ${styles.paddingY} flex-col`}>
+    <div className={`${styles.flexCenter} md:flex-row  flex-col mb-8 w-full`}>
+      <div className="flex-[10] justify-center">
         {/* <img
           src={logo}
           alt="hoobank"
@@ -19,8 +19,8 @@ const Footer = () => (
         </p>
       </div>
 
-      <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
-        <div className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
+      <div className="flex-[1.5] w-full flex flex-col justify-between flex-wrap md:mt-0 mt-10">
+        <div className={`flex-col flex ss:my-0 my-4 min-w-[150px]`}>
           <ul className="list-none mt-4 ">
 
             
@@ -31,7 +31,7 @@ const Footer = () => (
                 flexDirection:'column',
             }}
             >
-              <span className="text-gradient font-poppins font-normal text-[25px] leading-[90px]  text-dimWhite mb-4">Vicente Lopez</span>
+              <span className="text-gradient font-poppins text-center font-normal text-[25px] leading-[90px]  text-dimWhite mb-4">Vicente Lopez</span>
               <a
                 href="tel:254-534-8261"
                 className="hover:text-secondary cursor-pointer"
