@@ -32,14 +32,14 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-1 my-10 relative`}>
-        <img className="xs:w-[80%] h-[50%] xl:w-[100%] h-[50%]" src={treegrass} alt="treegrass" 
+      <div className={`flex-1 flex ${styles.flexCenter} md:my-1 p-10 my-10 relative`}>
+        {/* <img className="xs:w-[80%] h-[50%] xl:w-[100%] h-[50%] rounded-2xl" src={treegrass} alt="treegrass" 
         style={{
           paddingRight:'40px',
           paddingLeft:'40px',
-          borderRadius: '40px !important'
         }} 
-        />
+        /> */}
+        <img className="rounded-2xl xs:w-[50%] h-[50%] xl:w-[80%] h-[50%]"  alt="treegrass"  src={treegrass}/>
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />

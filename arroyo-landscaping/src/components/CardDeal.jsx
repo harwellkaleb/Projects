@@ -40,17 +40,19 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact">
-      <div 
+    <section className="pt-40" id="contact">
+      <div className="p-20 shadow-2xl "
         style={{
           paddingBottom: "5em",
           borderRadius: "80px",
+
+          
           
         }}
       >
-        <h2 className={`${styles.heading2}`}>Contact Form</h2>
-        <form className={`${styles.flex} md:flex-col justify-center items-center`}ref={form} >
-          <div style={{ width: 'calc(50% - 1rem)'}} className="m-5">
+        <h2 className={`${styles.heading2} text-center mt-10 mb-10 `}>Contact Form</h2>
+        <form className={`${styles.flex} flex-col flex justify-center items-center`}ref={form} >
+          <div style={{ width: 'calc(80% - 1rem)'}} className="m-5">
             <label
               htmlFor="name"
               className={`${styles.label} block mb-2`}
@@ -69,7 +71,7 @@ const ContactForm = () => {
             />
           </div>
 
-          <div style={{ width: 'calc(50% - 1rem)'}} className="m-5">
+          <div style={{ width: 'calc(80% - 1rem)'}} className="m-5">
             <label
               htmlFor="email"
               className={`${styles.label} block mb-2`}
@@ -88,7 +90,7 @@ const ContactForm = () => {
             />
           </div>
 
-          <div style={{ width: 'calc(50% - 1rem)'}} className="m-5">
+          <div style={{ width: 'calc(80% - 1rem)'}} className="m-5">
             <label
               htmlFor="phone"
               className={`${styles.label} block mb-2`}
@@ -107,7 +109,7 @@ const ContactForm = () => {
             />
           </div>
 
-          <div  style={{ width: 'calc(50% - 1rem)'}} className="m-5">
+          <div  style={{ width: 'calc(80% - 1rem)'}} className="m-5">
             <label
               htmlFor="message"
               className={`${styles.label} block mb-2`}
@@ -127,7 +129,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary mt-10 bg-blue-gradient rounded-[10px] outline-none ${styles.flexCenter}`}
+            className={`py-4 px-6 font-poppins flex items-center flex-col text-center justify-center font-medium text-[18px] text-primary mt-20 bg-blue-gradient rounded-[10px] outline-none`}
             onClick={handleSubmit}
           >
             Submit
