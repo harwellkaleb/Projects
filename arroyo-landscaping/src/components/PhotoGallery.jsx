@@ -54,11 +54,24 @@ function PhotoGallery() {
 
   return (
     <div
-      className="max-w-[1400px] h-[780px]  w-full m-auto py-16 px-4 relative group"
+      className="max-w-[1400px] h-[780px]    w-full m-auto py-16 px-4 relative group"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
+    
+      {/* <span
+        style={{
+          textAlign: "center",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        className="text-gradient flex-1 font-poppins  mb-10 font-semibold ss:text-[72px] text-[52px] text-white "
+      >
+        Photo Gallery
+      </span> */}
+      
       <span
         style={{
           textAlign: "center",
@@ -71,7 +84,7 @@ function PhotoGallery() {
         Photo Gallery
       </span>
       <div
-        className="w-full h-full rounded-2xl shadow-2xl bg-center bg-cover duration-500"
+        className="w-full h-full rounded-2xl  shadow-2xl bg-center bg-cover duration-500"
         style={{
           backgroundImage: `url(${images[currentIndex].src})`,
           position: "relative",
@@ -80,6 +93,8 @@ function PhotoGallery() {
           borderRadius: "2rem",
         }}
       />
+      <div className="white__gradient w-full -z-50 h-[35%]"/>
+      
       {/* left arrow */}
       <div className="hidden group-hover:block absolute top-[75%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer  ">
         <UilArrowLeft onClick={prevSlide} size={50} />
@@ -93,7 +108,7 @@ function PhotoGallery() {
           <div
             key={imageIndex}
             onClick={() => goToSlide(imageIndex )}
-            className="text-2xl cursor-pointer  "
+            className="text-2xl relative translate-y-[-900%] cursor-pointer   "
           >
             <UilCircle />
           </div>
