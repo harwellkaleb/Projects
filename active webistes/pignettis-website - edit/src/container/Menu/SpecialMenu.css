@@ -588,7 +588,7 @@
 } */
 }
 
-@media screen and (max-width: 336px) {
+@media screen and (max-width: 300px) {
 
   .specialMenu__details {
     width: 100%;

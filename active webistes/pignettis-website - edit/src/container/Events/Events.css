@@ -5,20 +5,15 @@
 }
 
 .app__events-container {
-  /* max-width: 1200px;
-    margin: 0 auto; */
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
 
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 -10px;
-
+  /* margin: 0 -10px; */
 }
-
-
-
-
 
 .upcoming__events {
   display: flex;
@@ -31,9 +26,7 @@
   opacity: 0.8;
   width: 260px;
   height: 320px;
-  ;
 }
-
 
 .app__fullscreen-viewer {
   position: fixed;
@@ -82,7 +75,6 @@
   margin-bottom: 3rem;
 }
 
-
 @media screen and (max-width: 900px) {
   .app__event-image {
     width: 240px;
@@ -96,10 +88,7 @@
     opacity: 0.8;
     width: 260px;
     height: 270px;
-    ;
   }
-
-
 }
 
 @media screen and (max-width: 650px) {
@@ -110,14 +99,12 @@
     background-size: cover;
     margin: 12px;
   }
-  
 
   .app__event-image:hover {
     opacity: 0.8;
     width: 120px;
     height: 100px;
   }
-
 }
 
 @media screen and (max-width: 336px) {
@@ -134,5 +121,4 @@
     width: 70px;
     height: 55px;
   }
-
 }

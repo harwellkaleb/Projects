@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="app__navbar-logo">
         <img src={images.gericht} alt="app logo" />
       </div>
-      <ul className='app__navbar-links'>
+      {/* <ul className='app__navbar-links'>
         <li className='p__opensans'><a href='#home'>Home</a></li>
         <li className='p__opensans'><a href='#about'>About</a></li>
         <li className='p__opensans'><a href='#menu'>Menu</a></li>
@@ -50,7 +50,7 @@ const Navbar = () => {
         <li className='p__opensans'><a href='#contact'>Contact</a></li>
         <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple/giftcards' target='_blank'  rel="noreferrer" >Gift Cards</a></li>
         <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple/findcard' target='_blank' without rel="noreferrer" >Gift Card Balance</a></li>
-      </ul>
+      </ul> */}
 
       <div className="app__navbar-login">
         <a href='https://www.toasttab.com/pignettis-italian-temple' target='_blank' rel="noreferrer" className='p__opensans'>Order Online</a>
@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
       
 
-      <div className='app__navbar-smallscreen'>
+      <div className='app__navbar-smallscreen '>
         <GiHamburgerMenu color='black' fontSize={27} onClick={() => setToggleMenu(true)} />
 
         {toggleMenu && (

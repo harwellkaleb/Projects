@@ -70,11 +70,14 @@ const Events = () => {
       buttonText: 'Buy Tickets!',
       showButton: true,
       buttonStyle: {
+        
+        maxHeight:'70px',
+        maxWidth:'50px',
         backgroundColor: 'var(--color-crimson)',
         color: 'black',
-        fontSize: '16px',
+        fontSize: '10px',
         letterSpacing: '0.04em',
-        lineHeight: '28px',
+        lineHeight: '8px',
         borderRadius: '10px',
         border: 'none',
         outline: 'none',
