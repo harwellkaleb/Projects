@@ -59,6 +59,7 @@
   border: none;
   background-color: var(--color-crimson);
   transform: translateX(-280%);
+  cursor: pointer;
 }
 
 .button-next {
@@ -67,6 +68,7 @@
   border: none;
   transform: translateX(180%);
   background-color: var(--color-crimson);
+  cursor: pointer;
 }
 
 .arrows__container{

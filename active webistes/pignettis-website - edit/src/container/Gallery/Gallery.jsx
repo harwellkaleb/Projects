@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
@@ -23,8 +23,8 @@ const scroll = (direction) => {
  return (
     <div className='app__gallery flex__center'>
       <div className="app__gallery-content">
-        <SubHeading title="Instagram" />
         <h1 className='headtext__cormorant'>Photo Gallery</h1>
+        <SubHeading title="" />
         {/* <p className='p__opensans' style={{color:'#AAA', marginTop: '2rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p> */}
         <button type='button' className='custom__button'><a href='https://www.instagram.com/pignettistemple/' target='_blank' rel="noreferrer">View More</a></button>
       </div>
@@ -34,7 +34,7 @@ const scroll = (direction) => {
           {galleryImages.map((image, index) =>(
             <div className='app__gallery-images_card flex__center' key={`gallery_image-${index + 1}`}>
                 <img src={image} alt='gallery'/>
-                <BsInstagram className='gallery__image-icon' />
+                {/* <BsInstagram className='gallery__image-icon' /> */}
               </div>
           ) )}
         </div>

@@ -26,7 +26,7 @@ const ContactUs = () => {
         <p className='p__cormorant'>To request booking for a private event,</p>
         <p className='p__cormorant'>Please fill out the form below and we will reply to your email as soon as possible! Thank you!</p>
         <SubHeading title='' />
-        <form className='form__container' ref={form} onSubmit={sendEmail}>
+        <form className='form__container' style={{marginTop:'1rem'}} ref={form} onSubmit={sendEmail}>
           <label>Name</label>
           <input type="text" name="user_name" />
           <label>Email</label>

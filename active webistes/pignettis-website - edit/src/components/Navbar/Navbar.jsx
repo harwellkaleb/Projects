@@ -69,7 +69,7 @@ const Navbar = () => {
               <li className='p__opensans'><a href='#home' onClick={() => setToggleMenu(false)}>Home</a></li>
               <li className='p__opensans'><a href='#about' onClick={() => setToggleMenu(false)} >About</a></li>
               <li className='p__opensans'><a href='#menu' onClick={() => setToggleMenu(false)}>Menu</a></li>
-              <li className='p__opensans'><a href='#events' onClick={() => setToggleMenu(false)}>Events</a></li>
+              <li className='p__opensans'><a href='#events' onClick={() => setToggleMenu(false)}>Upcoming Events</a></li>
               <li className='p__opensans'><a href='#Private-Events' onClick={() => setToggleMenu(false)}>Private Events</a></li>
               <li className='p__opensans'><a href='#contact' onClick={() => setToggleMenu(false)}>Contact</a></li>
               <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple' target='_blank' without rel="noreferrer"  onClick={() => setToggleMenu(false)} >Order Online</a></li>
