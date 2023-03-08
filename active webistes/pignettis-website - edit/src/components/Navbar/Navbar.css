@@ -104,10 +104,10 @@ list-style: none;
 }
 
 .app__navbar-smallscreen_links li{
-margin: 2rem;
+margin: 1rem;
 cursor: pointer;
 color: #C0C0C0;
-font-size: 2rem;
+font-size: 25px;
 text-align: center;
 font-family: var(--font-base);
 }
