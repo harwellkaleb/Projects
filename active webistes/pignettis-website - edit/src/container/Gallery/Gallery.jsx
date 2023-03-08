@@ -21,7 +21,7 @@ const scroll = (direction) => {
 }
 
  return (
-    <div className='app__gallery flex__center'>
+    <div id='gallery' className='app__gallery flex__center'>
       <div className="app__gallery-content">
         <h1 className='headtext__cormorant'>Photo Gallery</h1>
         <SubHeading title="" />
