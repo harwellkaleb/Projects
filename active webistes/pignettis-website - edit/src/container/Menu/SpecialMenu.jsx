@@ -35,15 +35,15 @@ function SpecialMenu() {
     setShowImage(false);
   };
 
-  const handleSwipe = () => {
-    if (startX && endX && endX < startX) {
-      handleNextClick();
-    } else if (startX && endX && endX > startX) {
-      handlePrevClick();
-    }
-    setStartX(null);
-    setEndX(null);
-  };
+  // const handleSwipe = () => {
+  //   if (startX && endX && endX < startX) {
+  //     handleNextClick();
+  //   } else if (startX && endX && endX > startX) {
+  //     handlePrevClick();
+  //   }
+  //   setStartX(null);
+  //   setEndX(null);
+  // };
 
 
 
@@ -109,7 +109,7 @@ function SpecialMenu() {
      }}
      onTouchEnd={() => {
        if (!lunchBrunchImages.includes(selectedImage)) {
-         handleSwipe();
+        //  handleSwipe();
        } else {
          setStartX(null);
          setEndX(null);

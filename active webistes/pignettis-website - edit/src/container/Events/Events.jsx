@@ -11,8 +11,8 @@ const EventImage = ({ event, openFullscreenViewer, buttonStyle, fullscreenMode }
     >
       <div className={`app__fullscreen-viewer-button-container ${fullscreenMode ? 'fullscreen-mode' : ''}`} style={{ bottom: 0 }}>
         {event.showButton && (
-          <button className='app__fullscreen-viewer-button' style={buttonStyle}>
-            {event.buttonText}
+          <button className='app__fullscreen-viewer-button'>
+            Buy Tickets ! 
           </button>
         )}
       </div>
@@ -71,19 +71,19 @@ const Events = () => {
       showButton: true,
       buttonStyle: {
         
-        maxHeight:'70px',
-        maxWidth:'50px',
-        backgroundColor: 'var(--color-crimson)',
-        color: 'black',
-        fontSize: '10px',
-        letterSpacing: '0.04em',
-        lineHeight: '8px',
-        borderRadius: '10px',
-        border: 'none',
-        outline: 'none',
-        fontFamily: ' var(--font-base)',
-        fontWeight: '700',
-        padding: '1px 10px',
+        // maxHeight:'100px',
+        // maxWidth:'100px',
+        // backgroundColor: 'var(--color-crimson)',
+        // color: 'black',
+        // fontSize: '14px',
+        // letterSpacing: '0.04em',
+        // lineHeight: '8px',
+        // borderRadius: '10px',
+        // border: 'none',
+        // outline: 'none',
+        // fontFamily: ' var(--font-base)',
+        // fontWeight: '700',
+        // padding: '10px 10px',
       },
     },
     {

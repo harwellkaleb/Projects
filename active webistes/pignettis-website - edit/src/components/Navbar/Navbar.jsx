@@ -52,15 +52,18 @@ const Navbar = () => {
         <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple/findcard' target='_blank' without rel="noreferrer" >Gift Card Balance</a></li>
       </ul> */}
 
+   
+      
+
+      <div className='app__navbar-smallscreen '>
+
       <div className="app__navbar-login">
         <a href='https://www.toasttab.com/pignettis-italian-temple' target='_blank' rel="noreferrer" className='p__opensans'>Order Online</a>
         <div />
         <a href='https://www.opentable.com/pignettis-italian-restaurant-reservations-temple?restref=168931&lang=en-US&ot_source=Restaurant%20website' target='_blank' rel="noreferrer"   class='p__opensans'>Book a table</a>
         </div>
-      
 
-      <div className='app__navbar-smallscreen '>
-        <GiHamburgerMenu color='black' fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu style={{cursor:'pointer'}} color='black' fontSize={27} onClick={() => setToggleMenu(true)} /> 
 
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">

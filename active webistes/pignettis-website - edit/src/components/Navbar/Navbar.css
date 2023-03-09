@@ -42,9 +42,9 @@ body {
 }
 
 .app__navbar-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display:flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .app__navbar-login a {
@@ -52,6 +52,7 @@ body {
   text-decoration: none;
   transition: 0.5s ease;
   color: black;
+  
 }
 
 .app__navbar-login a:hover {
@@ -62,6 +63,7 @@ body {
   width: 1px;
   height: 30px;
   background-color: black;
+
 }
 
 .app__navbar-smallscreen {
@@ -113,18 +115,18 @@ body {
   }
 
   .app__navbar-login {
-    display: flex;
+    display: none;
   }
   .app__navbar-login a {
     display: flex;
     font-size: 12px;
   }
   .app__navbar-logo img {
-    width: 65px;
+    width: 100px;
   }
 }
 
-/* @media screen and (max-width:650px) {
+@media screen and (max-width:650px) {
 .app__navbar{
     padding: 1rem;
 }
@@ -153,4 +155,4 @@ body {
     .app__navbar-smallscreen{
         display: flex;
     }
-} */
+}

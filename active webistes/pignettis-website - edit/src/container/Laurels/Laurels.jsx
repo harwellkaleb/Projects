@@ -41,7 +41,7 @@ const ContactUs = () => {
           <input type="date" name="user_date" />
           <label>Message</label>
           <textarea name="message" />
-          <input type="submit" value="Send" />
+          <input className='custom__button' type="submit" value="Send" />
         </form>
       </div>
 
