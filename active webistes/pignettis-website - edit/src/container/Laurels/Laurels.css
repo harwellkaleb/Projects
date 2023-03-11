@@ -7,6 +7,10 @@
     margin-top: 3rem;
 }
 
+.success-message{
+    color: #fff;
+}
+
 form {
     display: flex;
     flex-direction: column;
