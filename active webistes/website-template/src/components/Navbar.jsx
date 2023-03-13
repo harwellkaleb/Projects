@@ -16,7 +16,7 @@ const Navbar = () => {
         </ul>
         <ul className="list-none mx-8 sm:flex  justify-end items-center ">
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
         </ul>
         <ul className="list-none mx-8 sm:flex  justify-end items-center ">
