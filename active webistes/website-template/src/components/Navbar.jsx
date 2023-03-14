@@ -11,22 +11,22 @@ const Navbar = () => {
       <div className="max-w-[1640] flex flex-1  items-center   p-6">
         <ul className=" list-none mx-8 sm:flex justify-end items-center ">
           <li>
-            <a href="">Home</a>
+            <a href="#home">Home</a>
           </li>
         </ul>
         <ul className="list-none mx-8 sm:flex  justify-end items-center ">
           <li>
-            <a href="#about">About</a>
-          </li>
-        </ul>
-        <ul className="list-none mx-8 sm:flex  justify-end items-center ">
-          <li>
-            <a href="">Services</a>
+            <a href="#services">Services</a>
           </li>
         </ul>
         <ul className="list-none mx-8 sm:flex  justify-end items-center ">
           <li>
             <a href="">Contact</a>
+          </li>
+        </ul>
+        <ul className="list-none mx-8 sm:flex  justify-end items-center ">
+          <li>
+            <a href="">Testimonials</a>
           </li>
         </ul>
         <ul className="list-none mx-8 sm:flex  justify-end items-center ">

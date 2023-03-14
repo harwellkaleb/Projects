@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import About from "./components/About";
+
 import { services } from "./assets";
+import Services from "./components/Services";
 
 const App = () => (
   <div>
@@ -12,7 +13,7 @@ const App = () => (
     >
       <Navbar />
       <Home />
-      <About />
+      <Services/>
     </div>
     
   </div>

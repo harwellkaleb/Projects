@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section className=" py-[300px]  flex-col">
+    <section id="home" className=" py-[300px]  flex-col">
       <div className="  flex justify-center ">
         <div className=" flex  translate-x-[30em] translate-y-[-17em]">  
           <h2 className="font-sans font-medium text-9xl  leading-loose">
