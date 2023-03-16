@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { gallery01, gallery02, gallery03, treegrass } from "../assets";
+import { gallery02, gallery03, photo1, treegrass } from "../assets";
 import {
   UilArrowRight,
   UilArrowLeft,
@@ -9,10 +9,11 @@ import {
 
 function PhotoGallery() {
   const images = [
-    { title: "social-media-1", src: gallery01 },
+    { title: "social-media-1", src: photo1 },
     { title: "social-media-2", src: gallery02 },
     { title: "social-media-3", src: gallery03 },
     { title: "social-media-4", src: treegrass },
+  
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

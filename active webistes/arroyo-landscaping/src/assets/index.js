@@ -34,6 +34,7 @@ import shrubs from "./plant-shear.svg";
 import gallery01 from "./gallery01.png";
 import gallery02 from "./gallery02.png";
 import gallery03  from "./gallery03.png";
+import photo1 from "./PHOTO1.png";
 
 export {
   airbnb,
@@ -72,5 +73,6 @@ export {
   gallery01,
   gallery02,
   gallery03,
+  photo1,
 
 };
