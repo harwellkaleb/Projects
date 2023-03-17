@@ -97,7 +97,10 @@ const PhotoGallery = () => {
   };
 
   return (
-    <div id="gallery" className="flex justify-center items-center py-16 pl-24">
+    <div
+      id="gallery"
+      className="flex justify-center items-center py-16 pl-24 xs:flex-col   "
+    >
       {fullscreenImage && (
         <FullscreenViewer image={fullscreenImage} onClose={closeFullscreen} />
       )}
@@ -160,7 +163,6 @@ const PhotoGallery = () => {
             onClick={() => scroll("right")}
           />
         </div>
-
       </div>
     </div>
   );
