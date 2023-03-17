@@ -46,6 +46,30 @@ const Events = () => {
       },
     },
     {
+      image: images.wd412,
+      link: '#',
+      buttonText: 'Button 1',
+      showButton: false,
+      buttonStyle: {
+        backgroundColor: '#ff0000',
+        color: '#ffffff',
+        fontSize: '16px',
+        padding: '10px 20px',
+      },
+    },
+    {
+      image: images.easter23,
+      link: '#',
+      buttonText: 'Button 1',
+      showButton: false,
+      buttonStyle: {
+        backgroundColor: '#ff0000',
+        color: '#ffffff',
+        fontSize: '16px',
+        padding: '10px 20px',
+      },
+    },
+    {
       image: images.buenavista,
       link: '#',
       buttonText: 'button',
