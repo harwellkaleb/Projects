@@ -1,122 +1,169 @@
-
 import React, { useState } from "react";
-import { gallery02, gallery03, photo1, treegrass } from "../assets";
 import {
-  UilArrowRight,
-  UilArrowLeft,
-  UilCircle,
-} from "@iconscout/react-unicons";
+  photo1,
+  photo2,
+  photo3,
+  photo4,
+  photo5,
+  photo6,
+  photo7,
+  photo8,
+  photo9,
+  photo10,
+  photo11,
+  photo12,
+  photo13,
+  photo14,
+  photo15,
+  photo16,
+  photo17,
+  photo18,
+  photo19,
+  photo20,
+  photo21,
+  photo22,
+  photo23,
+  photo24,
+  photo25,
+  photo26,
+} from "../assets";
+import { UilArrowLeft, UilArrowRight } from "@iconscout/react-unicons";
 
-function PhotoGallery() {
-  const images = [
-    { title: "social-media-1", src: photo1 },
-    { title: "social-media-2", src: gallery02 },
-    { title: "social-media-3", src: gallery03 },
-    { title: "social-media-4", src: treegrass },
-  
-  ];
+const galleryImages = [
+  photo1,
+  photo2,
+  photo3,
+  photo4,
+  photo5,
+  photo6,
+  photo7,
+  photo8,
+  photo9,
+  photo10,
+  photo11,
+  photo12,
+  photo13,
+  photo14,
+  photo15,
+  photo16,
+  photo17,
+  photo18,
+  photo19,
+  photo20,
+  photo21,
+  photo22,
+  photo23,
+  photo24,
+  photo25,
+  photo26,
+];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
-
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === images.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToSlide = (imageIndex) => {
-    setCurrentIndex(imageIndex);
-  };
-
-  const handleTouchStart = (e) => {
-    setTouchStart(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchMove = (e) => {
-    setTouchEnd(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 150) {
-      nextSlide();
-    }
-
-    if (touchStart - touchEnd < -150) {
-      prevSlide();
-    }
-  };
-
+const FullscreenViewer = ({ image, onClose }) => {
   return (
-    <div
-      className="max-w-[1400px] h-[780px]    w-full m-auto py-16 px-4 relative group"
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-    >
-    
-      {/* <span
-        style={{
-          textAlign: "center",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-        className="text-gradient flex-1 font-poppins  mb-10 font-semibold ss:text-[72px] text-[52px] text-white "
-      >
-        Photo Gallery
-      </span> */}
-      
-      <span
-        style={{
-          textAlign: "center",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-        className="text-gradient flex-1 font-poppins mb-10 font-semibold ss:text-[72px] text-[52px] text-white "
-      >
-        Photo Gallery
-      </span>
-      <div
-        className="w-full h-full rounded-2xl  shadow-2xl bg-center bg-cover duration-500"
-        style={{
-          backgroundImage: `url(${images[currentIndex].src})`,
-          position: "relative",
-          width: "100%",
-          height: "100%",
-          borderRadius: "2rem",
-        }}
-      />
-      <div className="white__gradient w-full -z-50 h-[35%]"/>
-      
-      {/* left arrow */}
-      <div className="hidden group-hover:block absolute top-[75%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer  ">
-        <UilArrowLeft onClick={prevSlide} size={50} />
-      </div>
-      {/* right arrow */}
-      <div className="hidden group-hover:block absolute top-[75%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer  ">
-        <UilArrowRight onClick={nextSlide} size={50} />
-      </div>
-      <div className="flex top-4 justify-center py-2">
-        {images.map((image, imageIndex) => (
-          <div
-            key={imageIndex}
-            onClick={() => goToSlide(imageIndex )}
-            className="text-2xl relative translate-y-[-900%] cursor-pointer   "
-          >
-            <UilCircle />
-          </div>
-        ))}
+    <div className="fixed top-0 left-0 z-50 w-screen h-screen flex justify-center items-center bg-black bg-opacity-70">
+      <div className="w-[80%] h-[80%]">
+        <img
+          src={image}
+          alt="fullscreen"
+          className="w-full h-full object-contain cursor-pointer"
+          onClick={onClose}
+        />
       </div>
     </div>
   );
-}
+};
+
+const PhotoGallery = () => {
+  const [fullscreenImage, setFullscreenImage] = useState(null);
+
+  const scrollRef = React.useRef(null);
+
+  const scroll = (direction) => {
+    const { current } = scrollRef;
+
+    if (direction === "left") {
+      current.scrollLeft -= 300;
+    } else {
+      current.scrollLeft += 300;
+    }
+  };
+
+  const openFullscreen = (image) => {
+    setFullscreenImage(image);
+  };
+
+  const closeFullscreen = () => {
+    setFullscreenImage(null);
+  };
+
+  return (
+    <div id="gallery" className="flex justify-center items-center py-16 pl-24">
+      {fullscreenImage && (
+        <FullscreenViewer image={fullscreenImage} onClose={closeFullscreen} />
+      )}
+
+      <div
+        id="app__gallery-content"
+        className="flex flex-1 justify-center items-start flex-col min-w-[500px] pr-8"
+      >
+        <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
+          Gallery
+        </h1>
+        <button className="mt-10 ">
+          <a
+            className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none"
+            href=""
+          >
+            Contact Us
+          </a>
+        </button>
+      </div>
+
+      <div
+        id="app__gallery-images"
+        className="flex flex-1 flex-row max-w-[50%] relative"
+      >
+        <div
+          id="app__gallery-images_container"
+          className="flex flex-row w-max overflow-hidden  "
+          ref={scrollRef}
+        >
+          {galleryImages.map((image, index) => (
+            <div
+              id="app__gallery-images_card"
+              className="flex justify-center items-center relative min-w-[301px] h-[447px] mr-8"
+              key={`gallery_image-${index + 1}`}
+            >
+              <img
+                className=" w-full h-full object-cover opacity-100 rounded-md transition duration-75 ease-linear hover:opacity-[0.77] cursor-pointer"
+                src={image}
+                alt="gallery"
+                onClick={() => openFullscreen(image)}
+              />
+            </div>
+          ))}
+        </div>
+        <div
+          id="app__gallery-images-arrows"
+          className="w-full flex justify-between items-center pb-[1rem] absolute bottom-[5%]"
+        >
+          <UilArrowLeft
+            className="cursor-pointer bg-white rounded-md hover:bg-slate-300 "
+            size={40}
+            id="gallery__arrow-icon"
+            onClick={() => scroll("left")}
+          />
+          <UilArrowRight
+            className="cursor-pointer bg-white rounded-md hover:bg-slate-300 "
+            size={40}
+            id="gallery__arrow-icon"
+            onClick={() => scroll("right")}
+          />
+        </div>
+
+      </div>
+    </div>
+  );
+};
 
 export default PhotoGallery;
