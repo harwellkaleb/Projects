@@ -99,7 +99,7 @@ const PhotoGallery = () => {
   return (
     <div
       id="gallery"
-      className="flex justify-center items-center py-16 pl-24 xs:flex-col  xl:flex-row  "
+      className="flex justify-center items-center py-16 pl-24 flex-col xs:flex-col  xl:flex-row  "
     >
       {fullscreenImage && (
         <FullscreenViewer image={fullscreenImage} onClose={closeFullscreen} />
@@ -107,7 +107,7 @@ const PhotoGallery = () => {
 
       <div
         id="app__gallery-content"
-        className="flex flex-1 justify-center xs:min-w-full xs:pb-16 items-start flex-col min-w-[500px] pr-8"
+        className="flex flex-1 justify-center xs:min-w-full xs:p-16 items-start flex-col min-w-[500px] pr-8"
       >
         <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
           Gallery
@@ -124,7 +124,7 @@ const PhotoGallery = () => {
 
       <div
         id="app__gallery-images"
-        className="flex flex-1 flex-row xs:mr-20 xs:justify-center w-[150%] relative"
+        className="flex justify-center items-center flex-row max-w-[50%] relative"
       >
         <div
           id="app__gallery-images_container"
@@ -134,7 +134,7 @@ const PhotoGallery = () => {
           {galleryImages.map((image, index) => (
             <div
               id="app__gallery-images_card"
-              className="flex justify-center sm:h-80 xs:min-w-[240px]  items-center  relative min-w-[301px] h-[447px] mr-8"
+              className="flex justify-center sm:h-80 xs:min-w-[240px] items-center  relative min-w-[301px] h-[447px] mr-8"
               key={`gallery_image-${index + 1}`}
             >
               <img
