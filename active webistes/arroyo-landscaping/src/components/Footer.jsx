@@ -12,7 +12,9 @@ const Footer = () => (
           className="w-[266px] h-[72.14px] object-contain"
         /> */}
         <h1 className="flex-1 font-poppins font-semibold ss:text-[22px] text-[22px] text-white ss:leading-[100.8px] leading-[30px]">
+          <a className="flex" href="#home">
           Arroyo <span className="text-gradient">Landscaping</span> Service
+          </a>
         </h1>
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
           Contact Us Today For Your Free Estimate.

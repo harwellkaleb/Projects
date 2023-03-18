@@ -40,7 +40,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="pt-40" id="contact">
+    <section id="contact">
       <div className="p-20 shadow-2xl "
         style={{
           paddingBottom: "5em",

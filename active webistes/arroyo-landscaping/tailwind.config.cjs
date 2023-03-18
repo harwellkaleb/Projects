@@ -1,11 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   mode: "jit",
   theme: {
     extend: {
+      backgroundImage: {
+        'roof-bg': "url('./src/assets/PHOTO6.png')",
+       
+      },
       colors: {
         primary: "#0e4200",
+        overlay: "#00000080",
         secondary: "#4af604",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimWhite: "rgba(255, 255, 255, 0.7)",
