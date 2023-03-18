@@ -14,7 +14,10 @@ import {
 import { photo6 } from "./assets";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
+  <div
+    style={{ backgroundImage: photo6 }}
+    className="bg-primary w-full overflow-hidden"
+  >
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
@@ -23,7 +26,7 @@ const App = () => (
 
     <div>
       <img
-        className="absolute w-[100%] opacity-50 h-[130%] -z-1"
+        className="absolute w-[100%] h-[130%] xs:h-[143%] ss:h-[120%] sm:h-[94%]  opacity-50 -z-1"
         src={photo6}
       />
       <div>

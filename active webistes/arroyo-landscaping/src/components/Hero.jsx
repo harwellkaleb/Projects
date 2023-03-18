@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row z-10 flex-col ${styles.paddingY}`}
+      className={`flex md:flex-row z-10  flex-col sm:py-16 py-6`}
     >
       {showScroll && (
         <button
@@ -43,7 +43,7 @@ const Hero = () => {
       >
         <div className="flex flex-row items-center py-[6px] px-5 bg-discount-gradient rounded-[10px] mb-2">
           <a className="flex" href="#contact">
-            <img src={sprout} alt="discount" className="w-[32px] h-[32px]" />
+            <img src={sprout} alt="discount" className="w-[32px] h-[32px] " />
             <p className={`${styles.paragraph} ml-2 cursor-pointer`}>
               <span className="text-white">Get Your </span> Free{" "}
               <span className="text-white">Estimate </span> Today !
@@ -52,13 +52,13 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center w-full">
-          <h1 className="flex-1 text-center   font-poppins font-semibold xs:text-[49px] sm:text-[112px] md:text-[142px] text-[152px] text-white ss:leading-[140.8px] leading-[75px]">
+          <h1 className="flex-1 text-center   font-poppins font-semibold xs:text-[49px] sm:text-[92px] md:text-[142px] text-[152px] text-white xs:leading-[50.8px] ss:leading-[90.8px] leading-[75px]">
             Arroyo <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Landscaping</span>{" "}
           </h1>
         </div>
 
-        <h1 className="font-poppins font-semibold text-center xs:text-[49px] sm:text-[112px] md:text-[142px]  text-[152px] text-white ss:leading-[140.8px] leading-[75px] w-full">
+        <h1 className="font-poppins font-semibold text-center xs:text-[49px] sm:text-[92px] md:text-[142px]  text-[152px] text-white xs:leading-[50.8px] ss:leading-[90.8px] leading-[75px] w-full">
           Service.
         </h1>
 
