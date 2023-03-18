@@ -15,7 +15,7 @@ import { photo6 } from "./assets";
 
 const App = () => (
   <div
-    style={{ backgroundImage: photo6 }}
+    
     className="bg-primary w-full overflow-hidden"
   >
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -25,12 +25,12 @@ const App = () => (
     </div>
 
     <div>
-      <img
-        className="absolute w-[100%] h-[130%] xs:h-[143%] ss:h-[120%] sm:h-[94%]  opacity-50 -z-1"
-        src={photo6}
-      />
       <div>
-        <div className={`  ${styles.flexCenter} `}>
+        <div className={` bg-roof bg-no-repeat py-8 bg-cover bg-center  ${styles.flexCenter} `}>
+        {/* <img
+        className="absolute h-full w-full opacity-50 -z-1"
+        src={photo6}
+      /> */}
           <Hero />
         </div>
       </div>

@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        
+        'roof':"url('../src/assets/PHOTO6.png')"
        
       },
       colors: {
