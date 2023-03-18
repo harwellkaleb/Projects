@@ -11,14 +11,16 @@ const Footer = () => (
           alt="hoobank"
           className="w-[266px] h-[72.14px] object-contain"
         /> */}
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[22px] text-[22px] text-white ss:leading-[100.8px] leading-[30px]">
-          <a className="flex" href="#home">
-          Arroyo <span className="text-gradient">Landscaping</span> Service
+        <li className="flex  flex-col">
+        <h1 className="font-poppins   font-semibold ss:text-[22px] text-[22px] text-white ss:leading-[100.8px] leading-[30px]">
+          <a className="flex " href="#home">
+          Arroyo <span className=" text-gradient">Landscaping</span> Service
           </a>
         </h1>
-        <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
+        <p className={`${styles.paragraph} mt-4 text-center max-w-[260px]`}>
           Contact Us Today For Your Free Estimate.
         </p>
+        </li>
       </div>
 
       <div className="flex-[1.5] w-full flex flex-col justify-between flex-wrap md:mt-0 mt-10">
@@ -33,7 +35,7 @@ const Footer = () => (
                 flexDirection:'column',
             }}
             >
-              <span className="text-gradient font-poppins text-center font-normal text-[25px] leading-[90px]  text-dimWhite mb-4">Vicente Lopez</span>
+              <span className="text-gradient font-poppins text-center font-normal text-[25px] leading-[40px]  text-dimWhite mb-10">Vicente Lopez</span>
               <a
                 href="tel:254-534-8261"
                 className="hover:text-secondary cursor-pointer"

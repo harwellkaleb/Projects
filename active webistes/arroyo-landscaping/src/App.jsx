@@ -26,7 +26,7 @@ const App = () => (
 
     <div>
       <div>
-        <div className={` bg-roof bg-no-repeat py-8 bg-cover bg-center  ${styles.flexCenter} `}>
+        <div className={` bg-roof bg-no-repeat py-8   bg-cover bg-center  ${styles.flexCenter} `}>
         {/* <img
         className="absolute h-full w-full opacity-50 -z-1"
         src={photo6}
