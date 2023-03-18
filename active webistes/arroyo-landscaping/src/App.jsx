@@ -1,5 +1,16 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, PhotoGallery, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import {
+  Billing,
+  Business,
+  CardDeal,
+  Clients,
+  PhotoGallery,
+  Footer,
+  Navbar,
+  Stats,
+  Testimonials,
+  Hero,
+} from "./components";
 import { photo6 } from "./assets";
 
 const App = () => (
@@ -11,12 +22,15 @@ const App = () => (
     </div>
 
     <div>
-      <img className="absolute w-[100%] opacity-50 h-[130%] -z-1"  src={photo6} />
-    <div>
-      <div className={`  ${styles.flexCenter} `}>
-        <Hero />
+      <img
+        className="absolute w-[100%] opacity-50 h-[130%] -z-1"
+        src={photo6}
+      />
+      <div>
+        <div className={`  ${styles.flexCenter} `}>
+          <Hero />
+        </div>
       </div>
-    </div>
     </div>
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
