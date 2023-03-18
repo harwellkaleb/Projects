@@ -4,42 +4,49 @@ import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => (
   <section className={`${styles.flex} ${styles.paddingY} flex-col`}>
-    <div className={`${styles.flexCenter} md:flex-row  flex-col mb-8 w-full`}>
-      <div className="flex-[10] justify-center">
+    <div
+      className={` justify-center flex items-center md:flex-row  flex-col mb-8 w-full`}
+    >
+      <div className="flex-[10]   ">
         {/* <img
           src={logo}
           alt="hoobank"
           className="w-[266px] h-[72.14px] object-contain"
         /> */}
         <li className="flex  flex-col">
-        <h1 className="font-poppins   font-semibold ss:text-[22px] text-[22px] text-white ss:leading-[100.8px] leading-[30px]">
-          <a className="flex " href="#home">
-          Arroyo <span className=" text-gradient">Landscaping</span> Service
-          </a>
-        </h1>
-        <p className={`${styles.paragraph} text-center`}>
-          Contact Us Today For Your Free Estimate.
-        </p>
+          <h1 className="font-poppins mb-2  font-semibold ss:text-[22px] text-[22px] text-white ss:leading-[100.8px] leading-[30px]">
+            <a
+              className="flex xs:justify-center md:justify-start "
+              href="#home"
+            >
+              Arroyo <span className=" text-gradient">Landscaping</span> Service
+            </a>
+          </h1>
+          <p
+            className={`font-poppins font-normal text-dimWhite text-[18px] text-center leading-[30.8px] flex xs:justify-center md:justify-start`}
+          >
+            Contact Us Today For Your Free Estimate.
+          </p>
         </li>
       </div>
 
       <div className="flex-[1.5] w-full flex flex-col justify-between flex-wrap md:mt-0 mt-10">
         <div className={`flex-col flex ss:my-0 my-4 min-w-[150px]`}>
           <ul className="list-none mt-4 ">
-
-            
             <li
               className={`font-poppins font-normal text-[16px] leading-[0] text-dimWhite mb-4`}
               style={{
-                display:'flex',
-                flexDirection:'column',
-            }}
+                display: "flex",
+                flexDirection: "column",
+              }}
             >
-              <span className="text-gradient font-poppins text-center font-normal text-[25px] leading-[40px]  text-dimWhite mb-10">Vicente Lopez</span>
+              <span className="text-gradient font-poppins text-center font-normal text-[25px] leading-[40px]  text-dimWhite mb-10">
+                Vicente Lopez
+              </span>
               <a
                 href="tel:254-534-8261"
                 className="hover:text-secondary cursor-pointer"
-                style={{textAlign:'center'}}
+                style={{ textAlign: "center" }}
               >
                 254-534-8261
               </a>
