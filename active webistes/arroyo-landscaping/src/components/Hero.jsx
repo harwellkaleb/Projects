@@ -33,7 +33,7 @@ const Hero = () => {
       {showScroll && (
         <button
           onClick={scrollTop}
-          className="fixed bottom-10 z-10 right-10 p-1 rounded-full bg-gray-500 text-white"
+          className="fixed bottom-10 z-100 right-10 p-1 rounded-full bg-gray-500  hover:bg-slate-700 text-white"
         >
           <UilArrowUp size={45} />
         </button>
