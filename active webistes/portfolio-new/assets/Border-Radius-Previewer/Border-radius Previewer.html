@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Border-Radius-Previewer</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+          
+            body{
+                overflow: hidden;
+            }
+            header{
+                display: flex;
+            }
+            .content{
+                width: 100%;
+            }
+            .controls{
+               margin: 0 0 0 15px;
+            }
+
+            h2{
+                margin-top: 20px;
+                font-family: Roboto;
+            }
+
+            #bottom_right_text{
+                font-size: 22px;
+            }
+
+            #bottom_left_text{
+                font-size: 22px;
+            }
+            
+            .color_text{
+                font-size: medium;
+                margin-top: 0;
+                margin-left: 8px;
+                display: flex;
+                text-align: center;
+            }
+            
+            .block {
+                width: 400px;
+                height: 400px;
+                background-color: black;
+                margin: 40px auto;
+            }
+
+            .out {
+                width: 13%;
+                margin-top: -33px;
+                transform: translateX(9px);
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+            }
+            
+
+            input[type="color"] {
+                width: 300px;
+                height: 50px;
+                display: flex;
+                cursor: pointer;
+            }
+
+            header::before{
+                content: "";
+                position: absolute;
+                height: 150vh;
+                width: 100vw;
+                background-color: #2bd8e4;
+                z-index: -9;
+            }
+
+            .range{
+                height: 60px;
+                width: 200px;
+                background-color: white;
+                border-radius: 10px;
+                padding: 0 65px 0 45px;
+                margin: 10px;
+            }
+            .range .field {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+
+            .range .field input{
+                height: 3px;
+                width: 100%;
+                background-color: #ddd;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                margin-top: 1px;
+            }
+
+            .range .field .value{
+                position: absolute;
+                font-size: 18px;
+                font-weight: 600;
+                color: #545555;
+            }
+
+            .range .field .value.left{
+                left: -22px;
+                font-size: 1.4em;
+            }
+
+            .range .field .value.right{
+                right: -44px;
+                font-size: 1.4em;
+            }
+
+            .range .field input::-webkit-slider-thumb{
+                cursor: pointer;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            
+            <div class="controls">
+                <h2 id="all_corners_text">All Corners</h2>
+                <div class="range">
+                    <div class="field">
+                        <div class="value left">0</div>
+                        <input type="range" value="10" min="0" max="200" id="all_corners" oninput="allCr()">
+                        <div class="value right">200</div>
+                    </div>
+                </div>
+
+            <h2 id="top_left_text">Top Left</h2>
+                <div class="range">
+                    <div class="field">
+                        <div class="value left">0</div>
+                        <input type="range" value="10" min="0" max="200" id="top_left" oninput="topLf()">
+                        <div class="value right">200</div>
+                    </div>
+                </div>
+
+                <h2 id="top_right_text">Top Right</h2>
+                <div class="range">
+                    <div class="field">
+                        <div class="value left">0</div>
+                        <input type="range" value="10" min="0" max="200" id="top_right" oninput="topRt()">
+                        <div class="value right">200</div>
+                    </div>
+                </div>
+                
+                <h2 id="bottom_left_text">Bottom Left</h2>
+                <div class="range">
+                    <div class="field">
+                        <div class="value left">0</div>
+                        <input type="range" value="10" min="0" max="200" id="bottom_left" oninput="bottomLf()">
+                        <div class="value right">200</div>
+                    </div>
+                </div>
+                
+                <h2 id="bottom_right_text">Bottom Right</h2>
+                <div class="range">
+                    <div class="field">
+                        <div class="value left">0</div>
+                        <input type="range" value="10" min="0" max="200" id="bottom_right" oninput="bottomRt()">
+                        <div class="value right">200</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="block" id="block">
+
+                </div>
+                <div class="out" id="out">
+                    <input type="color" name="" id="colr" oninput="colOr()">
+                </div>
+                <div>
+                <h2 class="color_text">Color<br>Change</h2>
+                </div>
+            </div>
+        </header>
+        <script src="Border-radius Previewer.js"></script>
+    </body>
+</html>
