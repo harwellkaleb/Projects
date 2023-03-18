@@ -17,7 +17,7 @@ const Footer = () => (
           Arroyo <span className=" text-gradient">Landscaping</span> Service
           </a>
         </h1>
-        <p className={`${styles.paragraph} mt-4 text-center flex max-w-[250px]`}>
+        <p className={`${styles.paragraph} text-center`}>
           Contact Us Today For Your Free Estimate.
         </p>
         </li>
