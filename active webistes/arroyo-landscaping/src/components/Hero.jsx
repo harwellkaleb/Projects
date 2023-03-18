@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+      className={`flex md:flex-row z-10 flex-col ${styles.paddingY}`}
     >
       {showScroll && (
         <button

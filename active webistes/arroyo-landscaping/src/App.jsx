@@ -11,7 +11,7 @@ const App = () => (
     </div>
 
     <div>
-      <img className="absolute w-[100%] h-[130%] opacity-20"  src={photo6} />
+      <img className="absolute w-[100%] opacity-50 h-[130%] -z-1"  src={photo6} />
     <div>
       <div className={`  ${styles.flexCenter} `}>
         <Hero />
