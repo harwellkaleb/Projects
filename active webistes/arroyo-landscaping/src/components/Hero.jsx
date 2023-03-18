@@ -66,7 +66,9 @@ const Hero = () => {
           <GetStarted />
         </div>
 
-        <p className={`${styles.paragraph} xs:text-center xs:text-[15px] sm:text-[20px]  md:text-[20px] leading-[35px]  text-center max-w-[470px] mt-5`}>
+        <p
+          className={`${styles.paragraph} xs:text-center xs:text-[15px] sm:text-[20px]  md:text-[20px] leading-[35px]  text-center max-w-[470px] mt-5`}
+        >
           Welcome to Arroyo Landscaping Service, your premier choice for
           professional landscaping services in the Temple, TX area. We are
           committed to providing exceptional quality and customer service to
@@ -100,8 +102,6 @@ const Hero = () => {
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
         {/* gradient end */}
       </div>
-
-     
     </section>
   );
 };
