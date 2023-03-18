@@ -1,5 +1,6 @@
 import styles from "./style";
 import { Billing, Business, CardDeal, Clients, PhotoGallery, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import { photo6 } from "./assets";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -9,8 +10,9 @@ const App = () => (
       </div>
     </div>
 
-    <div className={` bg-roof-bg bg-center bg-cover bg-no-repeat   `}>
-    <div className={` bg-center bg-overlay bg-cover bg-no-repeat  `}>
+    <div>
+      <img className="absolute w-[100%] h-[130%] opacity-20"  src={photo6} />
+    <div>
       <div className={`  ${styles.flexCenter} `}>
         <Hero />
       </div>

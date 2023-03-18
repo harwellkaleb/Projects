@@ -3,7 +3,7 @@ import { arrowDown } from "../assets";
 
 const GetStarted = () => (
   <div
-    className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`}
+    className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full z-10 bg-blue-gradient p-[2px] cursor-pointer`}
     onClick={() =>
       window.scrollTo({
         top: document.getElementById("services").offsetTop,
