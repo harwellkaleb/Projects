@@ -26,20 +26,23 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Business = () =>  (
   <section id="services" className={layout.section}>
-    <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2} >
+    <div className={'flex flex-col justify-center items-center'}>
+      <h1 className="font-poppins font-semibold  ss:text-[72px] text-[52px] text-white">
         Services <br className="sm:block hidden" /> 
-      </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+      </h1>
+      {/* <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         With the right credit card, you can improve your financial life by
         building credit, earning rewards and saving money. But with hundreds
         of credit cards on the market.
-      </p>
+      </p> */}
 
       {/* <Button styles={`mt-10`} /> */}
-      <button className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] mt-8 outline-none ${styles}`}><a href="#contact">Contact Us</a></button>
+      <div className="flex justify-center items-center">
+    <button className={`py-4 px-6 font-poppins font-medium text-[18px]  text-primary bg-blue-gradient rounded-[10px] mt-8 outline-none `}><a href="#contact">Contact Us</a></button>
     </div>
-
+     
+    </div>
+   
     <div className={`${layout.sectionImg} flex-col`}>
       {features.map((feature, index) => (
         <FeatureCard key={feature.id} {...feature} index={index} />

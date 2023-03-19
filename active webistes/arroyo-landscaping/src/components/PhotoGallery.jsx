@@ -27,7 +27,11 @@ import {
   photo25,
   photo26,
 } from "../assets";
-import { UilArrowLeft, UilArrowRight, UilExpandArrowsAlt  } from "@iconscout/react-unicons";
+import {
+  UilArrowLeft,
+  UilArrowRight,
+  UilExpandArrowsAlt,
+} from "@iconscout/react-unicons";
 
 const galleryImages = [
   photo1,
@@ -109,19 +113,19 @@ const PhotoGallery = () => {
   
     function handleTouchMove(e) {
       const touchCurrentX = e.touches[0].clientX;
-      const dx = touchCurrentX - touchStartX;
-      const sensitivity = 1; // adjust as needed
+      const dx = touchStartX - touchCurrentX;
+      const sensitivity = 10; // adjust as needed
       if (Math.abs(dx) > sensitivity) {
         e.preventDefault();
         container.style.scrollBehavior = "unset"; // disable smooth scrolling during swipe
-        container.scrollLeft = startScrollLeft - dx;
+        container.scrollLeft = startScrollLeft + dx;
       }
     }
   
     function handleTouchEnd(e) {
       const touchEndX = e.changedTouches[0].clientX;
-      const dx = touchEndX - touchStartX;
-      const threshold = container.clientWidth / 0; // adjust as needed
+      const dx = touchStartX - touchEndX;
+      const threshold = container.clientWidth / 2; // adjust as needed
       if (Math.abs(dx) > threshold) {
         container.style.scrollBehavior = "smooth"; // enable smooth scrolling for animation
         if (dx > 0) {
@@ -134,14 +138,12 @@ const PhotoGallery = () => {
       container.removeEventListener("touchend", handleTouchEnd);
     }
   };
-  
 
   return (
     <div
       id="gallery"
       className="flex justify-end items-center py-16  flex-col xs:px-0 xs:flex-col xl:pl-32  xl:flex-row  "
     >
-      
       <div
         id="app__gallery-content"
         className="flex flex-1  xs:min-w-full text-center xs:p-16 items-center flex-col min-w-[500px] pr-8"
@@ -158,39 +160,36 @@ const PhotoGallery = () => {
           </a>
         </button> */}
       </div>
-  
+
       <div
         id="app__gallery-images"
         className="flex flex-row max-w-[50%] xs:max-w-[100%] sm:max-w-[50%] md:max-w-[50%] lg:max-w-[50%] relative"
-       
       >
         {fullscreenImage && (
-        <FullscreenViewer image={fullscreenImage} onClose={closeFullscreen} />
-      )}
+          <FullscreenViewer image={fullscreenImage} onClose={closeFullscreen} />
+        )}
         <div
           id="app__gallery-images_container"
           className="flex flex-row rounded-lg w-max overflow-hidden  "
           ref={scrollRef}
           onTouchStart={handleTouchStart}
         >
-          
           {galleryImages.map((image, index) => (
             <div
               id="app__gallery-images_card"
               className="flex justify-center sm:h-80 xs:min-w-[240px] items-center  relative min-w-[301px] h-[447px] mr-8"
               key={`gallery_image-${index + 1}`}
             >
-               <UilExpandArrowsAlt
-        id="gallery__expansion-icon"
-         className="cursor-pointer z-10 absolute bg-white rounded-md hover:bg-slate-300 "
-         size={40}
-         onClick={() => openFullscreen(image)}
-         />
+              <UilExpandArrowsAlt
+                id="gallery__expansion-icon"
+                className="cursor-pointer z-10 absolute bg-white rounded-md hover:bg-slate-300 "
+                size={40}
+                onClick={() => openFullscreen(image)}
+              />
               <img
                 className=" w-full h-full object-cover opacity-100 rounded-lg transition duration-75 ease-linear hover:opacity-[0.77] "
                 src={image}
                 alt="gallery"
-               
               />
             </div>
           ))}
@@ -199,17 +198,13 @@ const PhotoGallery = () => {
           id="app__gallery-images-arrows"
           className="w-full flex justify-between items-center pb-[1rem] absolute bottom-[5%]"
         >
-          
           <UilArrowLeft
             className="cursor-pointer bg-white rounded-md hover:bg-slate-300 "
             size={40}
             id="gallery__arrow-icon"
             onClick={() => scroll("left")}
           />
-        
-       
-      
-      
+
           <UilArrowRight
             className="cursor-pointer bg-white rounded-md hover:bg-slate-300 "
             size={40}
