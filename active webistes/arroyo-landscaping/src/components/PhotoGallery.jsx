@@ -108,9 +108,9 @@ const PhotoGallery = () => {
     const container = scrollRef.current;
     container.addEventListener("touchmove", handleTouchMove);
     container.addEventListener("touchend", handleTouchEnd);
-  
+
     let startScrollLeft = container.scrollLeft;
-  
+
     function handleTouchMove(e) {
       const touchCurrentX = e.touches[0].clientX;
       const dx = touchStartX - touchCurrentX;
@@ -121,7 +121,7 @@ const PhotoGallery = () => {
         container.scrollLeft = startScrollLeft + dx;
       }
     }
-  
+
     function handleTouchEnd(e) {
       const touchEndX = e.changedTouches[0].clientX;
       const dx = touchStartX - touchEndX;
