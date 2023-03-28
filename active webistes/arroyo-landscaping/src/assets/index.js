@@ -60,6 +60,13 @@ import photo23 from "./PHOTO23.png";
 import photo24 from "./PHOTO24.png";
 import photo25 from "./PHOTO25.png";
 import photo26 from "./PHOTO26.png";
+import photo27 from "./PHOTO27.png";
+import photo28 from "./PHOTO28.png";
+import photo29 from "./PHOTO29.png";
+import photo30 from "./PHOTO30.png";
+import photo31 from "./PHOTO31.png";
+import photo32 from "./PHOTO32.png";
+import photo33 from "./PHOTO33.png";
 
 export {
   airbnb,
@@ -124,5 +131,12 @@ export {
   photo24,
   photo25,
   photo26,
+  photo27,
+  photo28,
+  photo29,
+  photo30,
+  photo31,
+  photo32,
+  photo33,
 
 };

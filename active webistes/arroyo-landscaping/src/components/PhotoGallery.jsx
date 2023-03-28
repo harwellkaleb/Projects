@@ -26,6 +26,13 @@ import {
   photo24,
   photo25,
   photo26,
+  photo27,
+  photo28,
+  photo29,
+  photo30,
+  photo31,
+  photo32,
+  photo33,
 } from "../assets";
 import {
   UilArrowLeft,
@@ -60,6 +67,13 @@ const galleryImages = [
   photo24,
   photo25,
   photo26,
+  photo27,
+  photo28,
+  photo29,
+  photo30,
+  photo31,
+  photo32,
+  photo33,
 ];
 
 const FullscreenViewer = ({ image, onClose }) => {

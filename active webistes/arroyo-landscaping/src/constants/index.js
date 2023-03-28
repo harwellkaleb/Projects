@@ -1,4 +1,24 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, barrow, plants, tree, lawnMower, shrubs  } from "../assets";
+import {
+  people01,
+  people02,
+  people03,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+  barrow,
+  plants,
+  tree,
+  lawnMower,
+  shrubs,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -21,7 +41,6 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
- 
 ];
 
 export const features = [
@@ -65,24 +84,21 @@ export const features = [
 export const feedback = [
   {
     id: "feedback-1",
-    content:
-      "Very fast and professional",
+    content: "Very fast and professional",
     name: "Weston Euler",
     title: "Customer",
     img: people01,
   },
   {
     id: "feedback-2",
-    content:
-      "Was a pleasure to work with, I was very pleased with the job.",
-    name: "Ledia Harwell",
+    content: "Was a pleasure to work with, I was very pleased with the job.",
+    name: "Kaleb Harwell",
     title: "Customer",
     img: people02,
   },
   {
     id: "feedback-3",
-    content:
-      "My yard has never looked better.",
+    content: "My yard has never looked better.",
     name: "Eric Lara",
     title: "Customer",
     img: people03,
@@ -174,26 +190,26 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
-  {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
+  // {
+  //   id: "social-media-1",
+  //   icon: instagram,
+  //   link: "https://www.instagram.com/",
+  // },
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/people/Arroyo-Landscaping-Services/100066529609786/",
   },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
-    icon: linkedin,
-    link: "https://www.linkedin.com/",
-  },
+  // {
+  //   id: "social-media-3",
+  //   icon: twitter,
+  //   link: "https://www.twitter.com/",
+  // },
+  // {
+  //   id: "social-media-4",
+  //   icon: linkedin,
+  //   link: "https://www.linkedin.com/",
+  // },
 ];
 
 export const clients = [
