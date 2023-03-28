@@ -39,7 +39,7 @@ const Hero = () => {
         </button>
       )}
       <div
-        className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`}
+        className={`flex-1 ${styles.flexCenter} flex-col pt-5 xl:px-0 sm:px-16 px-6`}
       >
         <div className="flex flex-row items-center mb-6  py-[8px] px-5 bg-discount-gradient rounded-[10px] ">
           <a className="flex" href="#contact">
