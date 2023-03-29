@@ -25,8 +25,9 @@ const ContactUs = () => {
 <div className='app__bg app__wrapper section__padding' id='Private-Events'>
   <div className="app__wrapper_info">
     <h1 className='headtext__cormorant'>request a private event</h1>
-    <p className='p__cormorant'>To request booking for a private event,</p>
-    <p className='p__cormorant'>Please fill out the form below and we will reply to your email as soon as possible! Thank you!</p>
+    <p className='p__cormorant'>Lunch minimum: $500 Dinner minimum: $2000</p>
+    <p className='p__cormorant'>To request renting a space for a private event,</p>
+    <p className='p__cormorant'>Please fill out the form below and we will reply to your email as soon as possible! Thank you! If you would like to reserve a table please use the book a table link.</p>
     <SubHeading title='' />
     <form className='form__container' style={{marginTop:'1rem'}} ref={form} onSubmit={sendEmail}>
       <label>Name</label>

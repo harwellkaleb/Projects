@@ -77,7 +77,7 @@ const Navbar = () => {
               <li className='p__opensans'><a href='#contact' onClick={() => setToggleMenu(false)}>Contact</a></li>
               <li className='p__opensans'><a href='#gallery' onClick={() => setToggleMenu(false)}>Gallery</a></li>
               <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple' target='_blank' without rel="noreferrer"  onClick={() => setToggleMenu(false)} >Order Online</a></li>
-              <li className='p__opensans'><a href='https://www.opentable.com/pignettis-italian-restaurant-reservations-temple?restref=168931&lang=en-US&ot_source=Restaurant%20website' target='_blank' rel="noreferrer" onClick={() => setToggleMenu(false)}>Book table</a></li>
+              <li className='p__opensans'><a href='https://www.opentable.com/pignettis-italian-restaurant-reservations-temple?restref=168931&lang=en-US&ot_source=Restaurant%20website' target='_blank' rel="noreferrer" onClick={() => setToggleMenu(false)}>Book a table</a></li>
               <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple/giftcards' target='_blank' rel="noreferrer"  onClick={() => setToggleMenu(false)} >Gift Cards</a></li>
               <li className='p__opensans'><a href='https://www.toasttab.com/pignettis-italian-temple/findcard' target='_blank' rel="noreferrer" onClick={() => setToggleMenu(false)} >Gift Card Balance</a></li>
             </ul>
