@@ -1,11 +1,13 @@
 "use client";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ExploreCard, TitleText, TypingText } from "../components";
 
 import styles from "../styles";
-import { fadeIn, staggerContainer } from "../utils/motion";
 import { exploreWorlds } from "../constants";
+import { staggerContainer } from "../utils/motion";
+import { ExploreCard, TitleText, TypingText } from "../components";
+
 const Explore = () => {
   const [active, setActive] = useState("world-2");
   return (
@@ -19,22 +21,22 @@ const Explore = () => {
       >
         <TypingText title="| The World" textStyles="text-center" />
         <TitleText
-          title={(
+          title={
             <>
               Choose the world you want <br className="md:block hidden" /> to
               explore{" "}
             </>
-          )}
+          }
           textStyles="text-center"
         />
-        <div>
+        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={world.id}
               {...world}
               index={index}
               active={active}
-              handleclick={setActive}
+              handleClick={setActive}
             />
           ))}
         </div>
