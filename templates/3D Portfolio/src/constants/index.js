@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  Vite,
+  Next,
 } from '../assets';
 
 export const navLinks = [
@@ -73,8 +75,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: 'TypeScript',
-    icon: typescript,
+    name: 'Next.js',
+    icon: Next,
   },
   {
     name: 'React JS',
@@ -109,8 +111,8 @@ const technologies = [
     icon: figma,
   },
   {
-    name: 'docker',
-    icon: docker,
+    name: 'Vite',
+    icon: Vite,
   },
 ];
 
