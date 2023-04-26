@@ -218,7 +218,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/harwellkaleb/Projects/tree/master/templates/metaverses',
   },
   {
     name: 'Job IT',
@@ -239,7 +239,7 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/harwellkaleb/Projects/tree/master/active%20webistes/pignettis-website%20-%20edit',
   },
   {
     name: 'Trip Guide',
@@ -260,7 +260,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/harwellkaleb/Projects/tree/master/templates/Responsive%20restaraunt%20site',
   },
 ];
 
