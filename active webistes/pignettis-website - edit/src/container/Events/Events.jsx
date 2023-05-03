@@ -34,7 +34,7 @@ const Events = () => {
 
   const UpcomingEvents = [
     {
-      image: images.bodegasWd,
+      image: images.abrahamcruz,
       link: '#',
       buttonText: 'Button 1',
       showButton: false,
@@ -46,7 +46,7 @@ const Events = () => {
       },
     },
     {
-      image: images.wd412,
+      image: images.cincodemayo,
       link: '#',
       buttonText: 'Button 1',
       showButton: false,
@@ -58,7 +58,7 @@ const Events = () => {
       },
     },
     {
-      image: images.easter23,
+      image: images.crockerstarr,
       link: '#',
       buttonText: 'Button 1',
       showButton: false,
@@ -89,10 +89,10 @@ const Events = () => {
       },
     },
     {
-      image: images.caveat,
-      link: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WGSY2S9X7D7JW',
+      image: images.operanight,
+      link: '#',
       buttonText: 'Buy Tickets!',
-      showButton: true,
+      showButton: false,
       buttonStyle: {
         
         // maxHeight:'100px',
@@ -126,7 +126,7 @@ const Events = () => {
 
   const PastEvents = [
     {
-      image: images.event4,
+      image: images.bodegasWd,
       link: '#',
       buttonText: 'Button 5',
       showButton: false,
@@ -138,7 +138,7 @@ const Events = () => {
       },
     },
     {
-      image: images.event5,
+      image: images.wd412,
       link: '#',
       buttonText: 'Button 6',
       showButton: false,
@@ -150,7 +150,7 @@ const Events = () => {
       },
     },
     {
-      image: images.event1,
+      image: images.caveat,
       link: '#',
       buttonText: 'Button 7',
       showButton: false,

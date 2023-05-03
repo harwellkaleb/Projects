@@ -38,6 +38,10 @@ import bhcalendar from '../assets/bhcalendar.png';
 import caveat from '../assets/caveat.png';
 import wd412 from '../assets/wd4-12.png';
 import easter23 from '../assets/Easter2023.png';
+import abrahamcruz from '../assets/abrahamcruz.png';
+import cincodemayo from '../assets/cincodemayo.png';
+import crockerstarr from '../assets/crockerstarr.png';
+import operanight from '../assets/operanight.png';
 
 export default {
   bg,
@@ -80,4 +84,8 @@ export default {
   caveat,
   wd412,
   easter23,
+  abrahamcruz,
+  cincodemayo,
+  crockerstarr,
+  operanight,
 };
