@@ -2,17 +2,27 @@ import React, { useState } from 'react';
 import images from '../../constants/images';
 import './Events.css';
 
-const EventImage = ({ event, openFullscreenViewer, buttonStyle, fullscreenMode }) => {
+const EventImage = ({
+  event,
+  openFullscreenViewer,
+  buttonStyle,
+  fullscreenMode,
+}) => {
   return (
     <div
       className='app__event-image'
       style={{ backgroundImage: `url(${event.image})` }}
       onClick={() => openFullscreenViewer(event)}
     >
-      <div className={`app__fullscreen-viewer-button-container ${fullscreenMode ? 'fullscreen-mode' : ''}`} style={{ bottom: 0 }}>
+      <div
+        className={`app__fullscreen-viewer-button-container ${
+          fullscreenMode ? 'fullscreen-mode' : ''
+        }`}
+        style={{ bottom: 0 }}
+      >
         {event.showButton && (
           <button className='app__fullscreen-viewer-button'>
-            Buy Tickets ! 
+            Buy Tickets !
           </button>
         )}
       </div>
@@ -30,7 +40,6 @@ const Events = () => {
   const closeFullscreenViewer = () => {
     setFullscreenImage(null);
   };
-
 
   const UpcomingEvents = [
     {
@@ -94,7 +103,6 @@ const Events = () => {
       buttonText: 'Buy Tickets!',
       showButton: false,
       buttonStyle: {
-        
         // maxHeight:'100px',
         // maxWidth:'100px',
         // backgroundColor: 'var(--color-crimson)',
@@ -161,9 +169,7 @@ const Events = () => {
         padding: '10px 20px',
       },
     },
-
   ];
-
 
   // const openFullscreenViewer = (event) => {
   //   setFullscreenImage(event);
@@ -174,9 +180,11 @@ const Events = () => {
   // };
 
   return (
-    <div id='events' style={{paddingBottom:'4em'}} className="app__events">
-      <h2 className="app__section-title headtext__cormorant">Upcoming Events</h2>
-      <div className="app__events-container">
+    <div id='events' style={{ paddingBottom: '4em' }} className='app__events'>
+      <h2 className='app__section-title headtext__cormorant'>
+        Upcoming Events
+      </h2>
+      <div className='app__events-container'>
         {UpcomingEvents.map((event, index) => (
           <EventImage
             event={event}
@@ -187,8 +195,8 @@ const Events = () => {
           />
         ))}
       </div>
-      <h2 className="app__section-title headtext__cormorant">Past Events</h2>
-      <div className="app__events-container">
+      <h2 className='app__section-title headtext__cormorant'>Past Events</h2>
+      <div className='app__events-container'>
         {PastEvents.map((event, index) => (
           <EventImage
             event={event}
@@ -200,17 +208,20 @@ const Events = () => {
         ))}
       </div>
       {fullscreenImage && (
-        <div className="app__fullscreen-viewer" onClick={closeFullscreenViewer}>
-          <img src={fullscreenImage.image} alt="fullscreen" />
+        <div className='app__fullscreen-viewer' onClick={closeFullscreenViewer}>
+          <img src={fullscreenImage.image} alt='fullscreen' />
           {fullscreenImage.showButton && (
-            <div className="app__fullscreen-viewer-button-container" style={{ position: "relative",}}>
+            <div
+              className='app__fullscreen-viewer-button-container'
+              style={{ position: 'relative' }}
+            >
               <button
-                className="app__fullscreen-viewer-button"
+                className='app__fullscreen-viewer-button'
                 style={{
-                  ...fullscreenImage.buttonStyle
+                  ...fullscreenImage.buttonStyle,
                 }}
               >
-                <a href={fullscreenImage.link} target="_blank" rel="noreferrer">
+                <a href={fullscreenImage.link} target='_blank' rel='noreferrer'>
                   {fullscreenImage.buttonText}
                 </a>
               </button>
@@ -218,9 +229,8 @@ const Events = () => {
           )}
         </div>
       )}
-
     </div>
   );
-}
+};
 
 export default Events;
