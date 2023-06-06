@@ -1,6 +1,0 @@
-step 1: collect design information from client 
-home,services,testimonials,gallery,contact  (special promtions)
-step 2:create figma design for client 
-step 3: client approves design 
-step 4: developmental stage - live preview
-step 5: deployment - finalization 

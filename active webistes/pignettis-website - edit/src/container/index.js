@@ -1,5 +1,5 @@
 import AboutUs from './AboutUs/AboutUs';
-import Chef from './Chef/Chef';
+import WineMenu from './WineMenu/WineMenu';
 import Events from './Events/Events';
 import FindUs from './Findus/FindUs';
 import Footer from './Footer/Footer';
@@ -11,7 +11,7 @@ import SpecialMenu from './Menu/SpecialMenu';
 
 export {
   AboutUs,
-  Chef,
+  WineMenu,
   Events,
   FindUs,
   Footer,
