@@ -78,11 +78,12 @@ function SpecialMenu() {
         </div>
 
         <div className="app__specialMenu-menu_cocktails flex__center">
-          <p className="app__specialMenu-menu_heading" style={{ marginBottom: '4rem' }}>Dinner</p>
+          <p className="app__specialMenu-menu_heading" style={{ marginBottom: '4rem' }}>Dinner & Wine Menu</p>
           <div className='menu__details specialMenu__details-container'>
             <div className='specialMenu__details-grid'>
               <p className='specialMenu__details'> served All Day, mon-thursday</p>
               <p className='specialMenu__details'> served All Day, friday-saturday</p>
+              <p className='specialMenu__details-wine'><a href='https://dashboard.tastevinapp.com/restaurants/261/wines'  target='_blank' rel="noreferrer">Wine Menu</a></p>
             </div>
           </div>
           <div className="app__specialMenu_menu_items">

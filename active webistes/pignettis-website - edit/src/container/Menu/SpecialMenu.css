@@ -117,6 +117,16 @@
 
 }
 
+.specialMenu__details-wine {
+  font-family: var(--font-alt);
+  color: var(--color-black);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+  text-align: center;
+}
 
 
 
