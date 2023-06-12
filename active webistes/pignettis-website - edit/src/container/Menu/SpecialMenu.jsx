@@ -83,7 +83,9 @@ function SpecialMenu() {
             <div className='specialMenu__details-grid'>
               <p className='specialMenu__details'> served All Day, mon-thursday</p>
               <p className='specialMenu__details'> served All Day, friday-saturday</p>
+              <div className='flex__center'>
               <p className='specialMenu__details-wine'><a href='https://dashboard.tastevinapp.com/restaurants/261/wines'  target='_blank' rel="noreferrer">Wine Menu</a></p>
+              </div>
             </div>
           </div>
           <div className="app__specialMenu_menu_items">
