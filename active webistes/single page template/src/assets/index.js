@@ -70,6 +70,7 @@ import photo33 from "./PHOTO33.png";
 import mop from "./mop.svg";
 import sprayBottle from "./sprayer-bottle.svg";
 import bgmop from "./house-cleaning.png";
+import unsplash from "./unsplash.png"
 
 
 export {
@@ -145,5 +146,6 @@ export {
   mop,
   sprayBottle,
   bgmop,
+  unsplash,
 
 };

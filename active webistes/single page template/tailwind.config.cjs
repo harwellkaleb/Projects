@@ -27,10 +27,10 @@ module.exports = {
         'top-4': 'center top 3rem',
       },
       backgroundImage: {
-        mop: "url('../src/assets/house-cleaning.png')",
+        mop: "url('../src/assets/unsplash.png')",
       },
       colors: {
-        primary: "#71bbf4",
+        primary: "#3399ff",
         overlay: "#00000080",
         secondary: "#4af604",
         dimWhite: "rgba(255, 255, 255, 0.7)",
