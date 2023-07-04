@@ -44,41 +44,41 @@ export const navLinks = [
 ];
 
 export const features = [
-  {
-    id: "feature-1",
-    icon: barrow,
-    title: "Weed Control Mulching",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
-  },
-  {
-    id: "feature-2",
-    icon: tree,
-    title: "Fertilizing Tree Removal",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
-  },
-  {
-    id: "feature-3",
-    icon: shrubs,
-    title: "Shrub Tree Trimming",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
-  },
-  {
-    id: "feature-1",
-    icon: plants,
-    title: "Plants & Flowers",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
-  },
-  {
-    id: "feature-2",
-    icon: lawnMower,
-    title: "Full Lawn Service",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
-  },
+  // {
+  //   id: "feature-1",
+  //   icon: barrow,
+  //   title: "Weed Control Mulching",
+  //   content:
+  //     "The best credit cards offer some tantalizing combinations of promotions and prizes",
+  // },
+  // {
+  //   id: "feature-2",
+  //   icon: tree,
+  //   title: "Fertilizing Tree Removal",
+  //   content:
+  //     "We take proactive steps make sure your information and transactions are secure.",
+  // },
+  // {
+  //   id: "feature-3",
+  //   icon: shrubs,
+  //   title: "Shrub Tree Trimming",
+  //   content:
+  //     "A balance transfer credit card can save you a lot of money in interest charges.",
+  // },
+  // {
+  //   id: "feature-1",
+  //   icon: plants,
+  //   title: "Plants & Flowers",
+  //   content:
+  //     "The best credit cards offer some tantalizing combinations of promotions and prizes",
+  // },
+  // {
+  //   id: "feature-2",
+  //   icon: lawnMower,
+  //   title: "Full Lawn Service",
+  //   content:
+  //     "We take proactive steps make sure your information and transactions are secure.",
+  // },
 ];
 
 export const feedback = [

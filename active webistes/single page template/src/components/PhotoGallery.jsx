@@ -200,11 +200,11 @@ const PhotoGallery = () => {
                 size={40}
                 onClick={() => openFullscreen(image)}
               />
-              <img
+              {/* <img
                 className=" w-full h-full object-cover opacity-100 rounded-lg transition duration-75 ease-linear hover:opacity-[0.77] "
                 src={image}
                 alt="gallery"
-              />
+              /> */}
             </div>
           ))}
         </div>

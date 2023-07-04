@@ -50,7 +50,7 @@ const ContactForm = () => {
           
         }}
       >
-        <h2 className={`${styles.heading2} text-center mt-10 mb-10 `}>Request A Free Quote</h2>
+        <h2 className={`${styles.heading2} flex justify-center text-center mt-10 mb-10 `}>Request A Free Quote</h2>
         <form className={`${styles.flex} flex-col flex justify-center items-center`}ref={form} >
           <div style={{ width: 'calc(80% - 1rem)'}} className="m-5">
             <label
