@@ -115,7 +115,7 @@ const ContactForm = () => {
               className={`${styles.label} block mb-2`}
               style={{ color: "#fff" }}
             >
-              Description
+              Description of job
             </label>
             <textarea
               id="message"

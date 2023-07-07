@@ -1,14 +1,14 @@
 import {
   people01,
-  people02,
-  people03,
+  house,
+  deepcleaning,
   facebook,
   instagram,
   linkedin,
   twitter,
-  airbnb,
-  binance,
-  coinbase,
+  newconstruction,
+  commercial,
+  residential,
   dropbox,
   send,
   shield,
@@ -44,41 +44,41 @@ export const navLinks = [
 ];
 
 export const features = [
-  // {
-  //   id: "feature-1",
-  //   icon: barrow,
-  //   title: "Weed Control Mulching",
-  //   content:
-  //     "The best credit cards offer some tantalizing combinations of promotions and prizes",
-  // },
-  // {
-  //   id: "feature-2",
-  //   icon: tree,
-  //   title: "Fertilizing Tree Removal",
-  //   content:
-  //     "We take proactive steps make sure your information and transactions are secure.",
-  // },
-  // {
-  //   id: "feature-3",
-  //   icon: shrubs,
-  //   title: "Shrub Tree Trimming",
-  //   content:
-  //     "A balance transfer credit card can save you a lot of money in interest charges.",
-  // },
-  // {
-  //   id: "feature-1",
-  //   icon: plants,
-  //   title: "Plants & Flowers",
-  //   content:
-  //     "The best credit cards offer some tantalizing combinations of promotions and prizes",
-  // },
-  // {
-  //   id: "feature-2",
-  //   icon: lawnMower,
-  //   title: "Full Lawn Service",
-  //   content:
-  //     "We take proactive steps make sure your information and transactions are secure.",
-  // },
+  {
+    id: "feature-1",
+    icon: house,
+    title: "Basic House Cleaning",
+    content:
+      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+  },
+  {
+    id: "feature-2",
+    icon: deepcleaning,
+    title: "Deep Cleaning",
+    content:
+      "We take proactive steps make sure your information and transactions are secure.",
+  },
+  {
+    id: "feature-3",
+    icon: newconstruction,
+    title: "New Construction Cleaning",
+    content:
+      "A balance transfer credit card can save you a lot of money in interest charges.",
+  },
+  {
+    id: "feature-1",
+    icon: commercial,
+    title: "Commercial Cleaning",
+    content:
+      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+  },
+  {
+    id: "feature-2",
+    icon: residential,
+    title: "Residential Cleaning",
+    content:
+      "We take proactive steps make sure your information and transactions are secure.",
+  },
 ];
 
 export const feedback = [
@@ -195,11 +195,11 @@ export const socialMedia = [
   //   icon: instagram,
   //   link: "https://www.instagram.com/",
   // },
-  {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/people/Arroyo-Landscaping-Services/100066529609786/",
-  },
+  // {
+  //   id: "social-media-2",
+  //   icon: facebook,
+  //   link: "https://www.facebook.com/people/Arroyo-Landscaping-Services/100066529609786/",
+  // },
   // {
   //   id: "social-media-3",
   //   icon: twitter,

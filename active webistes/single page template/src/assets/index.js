@@ -70,7 +70,13 @@ import photo33 from "./PHOTO33.png";
 import mop from "./mop.svg";
 import sprayBottle from "./sprayer-bottle.svg";
 import bgmop from "./house-cleaning.png";
-import unsplash from "./unsplash.png"
+import unsplash from "./unsplash.png";
+import house from "./house.svg";
+import deepcleaning from "./deepcleaning.svg";
+import newconstruction from "./newconstruction.svg";
+import commercial from "./commercial.svg";
+import residential from "./residential.svg";
+
 
 
 export {
@@ -147,5 +153,9 @@ export {
   sprayBottle,
   bgmop,
   unsplash,
-
+  house,
+  deepcleaning,
+  newconstruction,
+  commercial,
+  residential,
 };

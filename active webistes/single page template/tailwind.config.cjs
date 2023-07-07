@@ -30,9 +30,9 @@ module.exports = {
         mop: "url('../src/assets/unsplash.png')",
       },
       colors: {
-        primary: "#3399ff",
+        primary: "#000000",
         overlay: "#00000080",
-        secondary: "#4af604",
+        secondary: "#ffcc00",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(134, 255, 102, 0.1)",

@@ -42,7 +42,7 @@ const Footer = () => (
               }}
             >
               <span className='text-gradient font-poppins text-center font-normal text-[25px] leading-[40px]  text-dimWhite mb-10'>
-                Karla Nunez
+                <a href='mailto:bambynunez1989@gmail.com'>Karla Nunez</a>
               </span>
               <a
                 href='tel:561-698-6146'
@@ -52,6 +52,11 @@ const Footer = () => (
                 561-698-6146
               </a>
             </li>
+            <span
+              className={`font-poppins text-secondary flex text-center justify-center items-center font-normal text-[16px]  text-dimWhite `}
+            >
+              Please Text Only
+            </span>
           </ul>
         </div>
       </div>
