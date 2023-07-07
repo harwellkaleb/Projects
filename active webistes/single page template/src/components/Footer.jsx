@@ -41,9 +41,10 @@ const Footer = () => (
                 flexDirection: 'column',
               }}
             >
-              <span className='text-gradient font-poppins text-center font-normal text-[25px] leading-[40px]  text-dimWhite mb-10'>
+              <span className='text-gradient font-poppins text-center font-normal text-[25px] leading-[40px]  text-dimWhite mb-4'>
                 <a href='mailto:bambynunez1989@gmail.com'>Karla Nunez</a>
               </span>
+              <a className='hover:text-secondary font-poppins text-center font-normal text-[18px] text-dimWhite mb-8' href='mailto:bambynunez1989@gmail.com'>bambynunez1989@gmail.com</a>
               <a
                 href='tel:561-698-6146'
                 className='hover:text-secondary cursor-pointer'
