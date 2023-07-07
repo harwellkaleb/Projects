@@ -4,6 +4,7 @@ import ExploreCard from './ExploreCard';
 import StartSteps from './StartSteps';
 import NewFeatures from './NewFeatures';
 import InsightCard from './InsightCard';
+import SubHeading from './SubHeading';
 
 
 export {
@@ -14,4 +15,5 @@ export {
   NewFeatures,
   ExploreCard,
   InsightCard,
+  SubHeading,
 };

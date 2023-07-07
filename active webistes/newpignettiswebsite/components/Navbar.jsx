@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
-import styles from '../styles';
+// import styles from '../styles';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);

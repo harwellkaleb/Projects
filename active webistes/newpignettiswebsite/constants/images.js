@@ -42,6 +42,7 @@ import abrahamcruz from '../public/abrahamcruz.png';
 import cincodemayo from '../public/cincodemayo.png';
 import crockerstarr from '../public/crockerstarr.png';
 import operanight from '../public/operanight.png';
+import index from './index';
 
 export default {
   bg,
@@ -88,4 +89,5 @@ export default {
   cincodemayo,
   crockerstarr,
   operanight,
+  index,
 };
