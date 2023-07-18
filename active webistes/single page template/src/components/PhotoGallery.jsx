@@ -156,7 +156,7 @@ const PhotoGallery = () => {
         <button className='mt-10 '>
           <a
             className='py-4 px-6 font-poppins font-medium justify-center items-center text-center text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none'
-            href=''
+            href='#contact'
           >
             Contact Us
           </a>
