@@ -1,5 +1,14 @@
 import React, { useState, useRef } from 'react';
 import {
+  school,
+  school1,
+  school2,
+  school3,
+  school4,
+  school5,
+  school6,
+  school7,
+  school8,
   cleanbathroom,
   cleanbathroom1,
   cleanbathroom2,
@@ -35,6 +44,15 @@ import {
 } from '@iconscout/react-unicons';
 
 const galleryImages = [
+  school1,
+  school,
+  school2,
+  school3,
+  school5,
+  school4,
+  school6,
+  school7,
+  school8,
   before1,
   after1,
   before2,

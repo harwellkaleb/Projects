@@ -42,8 +42,18 @@ import abrahamcruz from '../assets/abrahamcruz.png';
 import cincodemayo from '../assets/cincodemayo.png';
 import crockerstarr from '../assets/crockerstarr.png';
 import operanight from '../assets/operanight.png';
+import bodegas08 from '../assets/Bodegas08.png';
+import whitehall from '../assets/Whitehall.png';
+import irontable from '../assets/Irontable.png';
+import caveat11 from '../assets/caveat11.png';
+import hartfordcourt from '../assets/HartfordCourt.png'
 
 export default {
+  hartfordcourt,
+  caveat11,
+  irontable,
+  whitehall,
+  bodegas08,
   bg,
   chef,
   G,

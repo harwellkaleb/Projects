@@ -24,7 +24,7 @@ const App = () => (
     <div>
       <div>
         <div
-          className={` bg-mop bg-no-repeat md:bg-fixed xs:bg-[length:100%_86.3%] md:bg-center md:bg-cover  ${styles.flexCenter} `}
+          className={` bg-mop bg-no-repeat md:bg-fixed xs:bg-[length:100%_86.3%] md:bg-center  ${styles.flexCenter} `}
         >
           {/* <img
         className="absolute h-full w-full opacity-50 -z-1"

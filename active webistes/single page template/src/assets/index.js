@@ -103,8 +103,26 @@ import cleanbathroom1 from './cleanbathroom1.jpg';
 import cleanbathroom2 from './cleanbathroom2.jpg';
 import cleankitchen from './cleankitchen.jpg';
 import cleankitchen1 from './cleankitchen1.jpg';
+import school from './school.jpg';
+import school1 from './school1.jpg';
+import school2 from './school2.jpg';
+import school3 from './school3.jpg';
+import school4 from './school4.jpg';
+import school5 from './school5.jpg';
+import school6 from './school6.jpg';
+import school7 from './school7.jpg';
+import school8 from './school8.jpg';
 
 export {
+  school,
+  school1,
+  school2,
+  school3,
+  school4,
+  school5,
+  school6,
+  school7,
+  school8,
   cleanbathroom,
   cleanbathroom1,
   cleanbathroom2,

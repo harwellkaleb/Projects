@@ -43,7 +43,7 @@ const Events = () => {
 
   const UpcomingEvents = [
     {
-      image: images.abrahamcruz,
+      image: images.hartfordcourt,
       link: '#',
       buttonText: 'Button 1',
       showButton: false,
@@ -55,7 +55,7 @@ const Events = () => {
       },
     },
     {
-      image: images.cincodemayo,
+      image: images.whitehall,
       link: '#',
       buttonText: 'Button 1',
       showButton: false,
@@ -67,7 +67,7 @@ const Events = () => {
       },
     },
     {
-      image: images.crockerstarr,
+      image: images.irontable,
       link: '#',
       buttonText: 'Button 1',
       showButton: false,
@@ -79,7 +79,7 @@ const Events = () => {
       },
     },
     {
-      image: images.buenavista,
+      image: images.caveat11,
       link: '#',
       buttonText: 'button',
       showButton: false,
@@ -97,44 +97,44 @@ const Events = () => {
         padding: '1px 10px',
       },
     },
-    {
-      image: images.operanight,
-      link: '#',
-      buttonText: 'Buy Tickets!',
-      showButton: false,
-      buttonStyle: {
-        // maxHeight:'100px',
-        // maxWidth:'100px',
-        // backgroundColor: 'var(--color-crimson)',
-        // color: 'black',
-        // fontSize: '14px',
-        // letterSpacing: '0.04em',
-        // lineHeight: '8px',
-        // borderRadius: '10px',
-        // border: 'none',
-        // outline: 'none',
-        // fontFamily: ' var(--font-base)',
-        // fontWeight: '700',
-        // padding: '10px 10px',
-      },
-    },
-    {
-      image: images.bhcalendar,
-      link: '#',
-      buttonText: 'Button 4',
-      showButton: false,
-      buttonStyle: {
-        backgroundColor: '#ff00ff',
-        color: '#ffffff',
-        fontSize: '16px',
-        padding: '10px 20px',
-      },
-    },
+    // {
+    //   image: images.operanight,
+    //   link: '#',
+    //   buttonText: 'Buy Tickets!',
+    //   showButton: false,
+    //   buttonStyle: {
+    //     // maxHeight:'100px',
+    //     // maxWidth:'100px',
+    //     // backgroundColor: 'var(--color-crimson)',
+    //     // color: 'black',
+    //     // fontSize: '14px',
+    //     // letterSpacing: '0.04em',
+    //     // lineHeight: '8px',
+    //     // borderRadius: '10px',
+    //     // border: 'none',
+    //     // outline: 'none',
+    //     // fontFamily: ' var(--font-base)',
+    //     // fontWeight: '700',
+    //     // padding: '10px 10px',
+    //   },
+    // },
+    // {
+    //   image: images.bhcalendar,
+    //   link: '#',
+    //   buttonText: 'Button 4',
+    //   showButton: false,
+    //   buttonStyle: {
+    //     backgroundColor: '#ff00ff',
+    //     color: '#ffffff',
+    //     fontSize: '16px',
+    //     padding: '10px 20px',
+    //   },
+    // },
   ];
 
   const PastEvents = [
     {
-      image: images.bodegasWd,
+      image: images.operanight,
       link: '#',
       buttonText: 'Button 5',
       showButton: false,
@@ -146,7 +146,7 @@ const Events = () => {
       },
     },
     {
-      image: images.wd412,
+      image: images.bodegas08,
       link: '#',
       buttonText: 'Button 6',
       showButton: false,
@@ -158,7 +158,7 @@ const Events = () => {
       },
     },
     {
-      image: images.caveat,
+      image: images.abrahamcruz,
       link: '#',
       buttonText: 'Button 7',
       showButton: false,
