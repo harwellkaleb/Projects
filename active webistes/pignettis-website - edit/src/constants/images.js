@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import bg from '../assets/bg.png';
 import chef from '../assets/chef.png';
 import G from '../assets/G.png';
@@ -46,9 +47,15 @@ import bodegas08 from '../assets/Bodegas08.png';
 import whitehall from '../assets/Whitehall.png';
 import irontable from '../assets/Irontable.png';
 import caveat11 from '../assets/caveat11.png';
-import hartfordcourt from '../assets/HartfordCourt.png'
+import hartfordcourt from '../assets/HartfordCourt.png';
+import turley from '../assets/TurleyDinner.png';
+import arborday from '../assets/ArborDay.png';
+import catena from '../assets/Catenawinedinner.png';
 
 export default {
+  turley,
+  arborday,
+  catena,
   hartfordcourt,
   caveat11,
   irontable,
