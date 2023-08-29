@@ -51,8 +51,10 @@ import hartfordcourt from '../assets/HartfordCourt.png';
 import turley from '../assets/TurleyDinner.png';
 import arborday from '../assets/ArborDay.png';
 import catena from '../assets/Catenawinedinner.png';
+import fess from '../assets/thumbnail_Fess_Parker.png';
 
 export default {
+  fess,
   turley,
   arborday,
   catena,

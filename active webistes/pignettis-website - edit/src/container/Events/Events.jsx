@@ -142,6 +142,18 @@ const Events = () => {
         padding: '10px 20px',
       },
     },
+    {
+      image: images.fess,
+      link: '#',
+      buttonText: 'Button 4',
+      showButton: false,
+      buttonStyle: {
+        backgroundColor: '#ff00ff',
+        color: '#ffffff',
+        fontSize: '16px',
+        padding: '10px 20px',
+      },
+    },
   ];
 
   const PastEvents = [
